@@ -4,4 +4,10 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 6
     });
+
+    $('.conditions__carusel').slick({
+        infinite: false,
+        centerMode: true,
+        slidesToShow: 1
+    })
 });
