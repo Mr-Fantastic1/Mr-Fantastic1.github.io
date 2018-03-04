@@ -9,7 +9,7 @@
   </head>
   <body class="index-page">
     <div class="wrapper">
-      <header>
+      <header class="header">
         <div class="container">
           <div class="seasons">
             <ul class="seasons__list">
@@ -63,7 +63,8 @@
         </section>
         <section class="how-is" style="background-image: url(img/content/pattern.png); background-size: 20%;">
           <div class="container">
-            <div class="how-is__block"><img class="how-is__img" src="img/content/2-how-is.png">
+            <div class="how-is__block">
+              <div class="how-is__img-wrapper"><img class="how-is__img" src="img/content/2-how-is.png"></div>
               <div class="how-is__desc">
                 <h2 class="title how-is__title">Как проходит?</h2>
                 <div class="how-is__txt">
@@ -78,19 +79,19 @@
         <section class="master-classes" style="background-image: url(img/content/3-master-classes.png);">
           <h2 class="title master-classes__title">Зимние мастер-классы</h2>
           <div class="container">
-            <div class="master-classes-block">
+            <div class="master-classes-block master-classes-block--video">
               <div class="master-classes-block__title master-classes-block__title-one">Видеосъёмка и монтаж</div>
               <div class="master-classes-block__txt">Позволит обучиться навыкам видеосъемки и монтажа. Также правильной работе с камерой и подбору актеров. У ребят будет возможность самим написать сценарий и снять свой первый клип.</div>
             </div>
-            <div class="master-classes-block">
+            <div class="master-classes-block master-classes-block--cinema">
               <div class="master-classes-block__title master-classes-block__title-two">Синемология</div>
               <div class="master-classes-block__txt">Позволит научиться на основе конкретных примеров из фильмов быть внимательными к своему образу мышления и собственным выборам. Развивает умение анализировать, критиковать.</div>
             </div>
-            <div class="master-classes-block">
+            <div class="master-classes-block master-classes-block--actor">
               <div class="master-classes-block__title master-classes-block__title-two">Актерское мастерство</div>
               <div class="master-classes-block__txt">Позволит раскрыть творческую индивидуальность и обогатить внутренний мир. Также предполагает развитие воображения и внимания, освобождение от зажимов.</div>
             </div>
-            <div class="master-classes-block">
+            <div class="master-classes-block master-classes-block--image">
               <div class="master-classes-block__title master-classes-block__title-one">Имидж</div>
               <div class="master-classes-block__txt">Позволит обучиться основам визажа, работе с гримом и созданию образов для персонажей. Также каждый научится создавать красивые декорации.</div>
             </div>
@@ -102,7 +103,7 @@
             <form class="question-form">
               <div class="question-form__wrapper">
                 <input class="question-form__input question-form__input--name" type="text" placeholder="Введите Имя">
-                <input class="question-form__input question-form__input--tel" type="tel" placeholder="Номер телефона">
+                <input class="tel question-form__input question-form__input--tel" type="tel" placeholder="Номер телефона">
               </div>
               <button class="btn question-form__btn" type="submit">Заказать звонок</button>
             </form>
@@ -382,7 +383,7 @@
             <form class="question-form">
               <div class="question-form__wrapper">
                 <input class="question-form__input question-form__input--name" type="text" placeholder="Введите Имя">
-                <input class="question-form__input question-form__input--tel" type="tel" placeholder="Номер телефона">
+                <input class="tel question-form__input question-form__input--tel" type="tel" placeholder="Номер телефона">
               </div>
               <button class="btn question-form__btn" type="submit">Заказать звонок</button>
             </form>
@@ -408,10 +409,24 @@
             </div>
           </div>
         </section>
+        <section>
+          <div class="map" id="map"></div>
+        </section>
       </div>
+      <footer class="footer">
+        <div class="container">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-vk-header.png"></a></li>
+            <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-inst.png"></a></li>
+            <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-fb.png"></a></li>
+          </ul>
+          <div class="copy">&copy; 2010-2018 “АкадемияГероев” Все права защищены.</div>
+        </div>
+      </footer>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
