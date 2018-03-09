@@ -9,6 +9,11 @@ jQuery(function($) {
     });
 });
 
+$('.toggle').on('click', function() {
+    $('.toggle').toggleClass('active');
+    $('.menu__hidden').toggleClass('active');
+    $('body').toggleClass('fixed');
+});
 
 $(document).ready(function () {
     jQuery(function($){
@@ -19,6 +24,24 @@ $(document).ready(function () {
         infinite: false,
         slidesToShow: 6,
         slidesToScroll: 6,
+
+        responsive: [
+            {
+                breakpoint: 1367,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5
+                }
+            },
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            }
+        ]
     });
 
     $('.conditions__carusel').slick({
@@ -26,9 +49,8 @@ $(document).ready(function () {
         centerPadding: 'auto',
         slidesToShow: 1,
         slidesToScroll: 1,
-        variableWidth: true,
-        dots: true,
-        dotsClass: 'conditions__dot'
+        variableWidth: true
+
     });
 
     $('.next-shift__slider').slick({
@@ -37,6 +59,17 @@ $(document).ready(function () {
         slidesToScroll: 1,
         variableWidth: true
     });
+
+    if (  jQuery(window).width() < 1100 ) {
+        $('.mobail-slider').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            dotsClass: 'mobail-slider__dots'
+        });
+    }
 
     $('.faq-block__btn--answer').on('click', function() {
         $('.faq-block__inner').removeClass('active');
