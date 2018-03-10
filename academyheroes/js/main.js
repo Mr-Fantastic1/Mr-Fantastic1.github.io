@@ -38,20 +38,52 @@ $(document).ready(function () {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4,
+                    slidesToScroll: 4
                 }
             }
         ]
     });
 
-    $('.conditions__carusel').slick({
+    var slider =  $('.conditions__carusel').slick({
         centerMode: true,
+        dots: true,
         centerPadding: 'auto',
         slidesToShow: 1,
         slidesToScroll: 1,
-        variableWidth: true
+        variableWidth: true,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    variableWidth: false,
+                    centerPadding: '80px'
+                }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    variableWidth: false
+                }
+            }
+        ]
 
     });
+
+    var dot = $(".conditions__dot");
+    slider.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
+        dot.removeClass("active").eq(nextSlide).addClass("active")
+    });
+
+    dot.on("click", function() {
+        var i = dot.index(this);
+        slider.slick("slickGoTo", i)
+    });
+
 
     $('.next-shift__slider').slick({
         centerMode: true,
@@ -140,6 +172,5 @@ $(document).ready(function () {
 
     });
 });
-
 
 
