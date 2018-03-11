@@ -1,3 +1,5 @@
+// Шапка и меню с позицией фмксед для их прокрутки
+
 jQuery(function($) {
     $(window).scroll(function(){
         if($(this).scrollTop()>600){
@@ -9,6 +11,8 @@ jQuery(function($) {
     });
 });
 
+// Показ и скрытие меню на мобилке
+
 $('.toggle').on('click', function() {
     $('.toggle').toggleClass('active');
     $('.menu__hidden').toggleClass('active');
@@ -16,9 +20,13 @@ $('.toggle').on('click', function() {
 });
 
 $(document).ready(function () {
+    // Маска для телефона
+
     jQuery(function($){
         $(".tel").mask("9-999-999-99-99");
     });
+
+    // Слайдер Команды
 
     $('.command__wrapper').slick({
         infinite: false,
@@ -40,9 +48,41 @@ $(document).ready(function () {
                     slidesToShow: 4,
                     slidesToScroll: 4
                 }
+            },
+
+            {
+                breakpoint: 1100,
+                settings: {
+                    arrow: false,
+                    dots: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
             }
         ]
     });
+
+    // Код для показа блока с полням описанием члена команды
+
+    $(function(){
+
+        $("#wr-tabs").on("click", ".tab", function(){
+
+            var tabs = $("#wr-tabs .tab"),
+                cont = $("#wr-tabs .tab-cont");
+
+            // Удаляем классы active
+            tabs.removeClass("active");
+            cont.removeClass("active");
+            // Добавляем классы active
+            $(this).addClass("active").fadeIn();
+            cont.eq($(this).index()).addClass("active");
+
+            return false;
+        });
+    });
+
+    // Слайдер условия
 
     var slider =  $('.conditions__carusel').slick({
         centerMode: true,
@@ -103,7 +143,10 @@ $(document).ready(function () {
         });
     }
 
+    // Код для блоков в секции "Нас спрашивают"
+
     $('.faq-block__btn--answer').on('click', function() {
+        $('.faq-block').removeClass('active');
         $('.faq-block__inner').removeClass('active');
         $('.faq-block__answer').removeClass('active');
         $('.faq-block__btn--answer').removeClass('hidden');
@@ -121,8 +164,25 @@ $(document).ready(function () {
         $('.faq-block__btn--roll-up').addClass('hidden');
         $('.faq-block__btn--answer').removeClass('hidden');
         $(this).closest('.faq-block').removeClass('active');
-        $(this).closest('.faq-block__inner').removeClass('active');
+        $(this).closest('.faq-block__answer').siblings('.faq-block__inner').removeClass('active');
     });
+
+    // Что бы при клике за блоками в секции "Нас спрашивают" Закрывался открытый блок
+
+    $(document).mouseup(function (e)
+    {
+        var container = $('.faq-block');
+
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $('.faq-block').removeClass('active');
+            $('.faq-block__inner').removeClass('active');
+            $('.faq-block__answer').removeClass('active');
+            $('.faq-block__btn--answer').removeClass('hidden');
+            $('.faq-block__btn--roll-up').addClass('hidden');
+        }
+    });
+
+    // Яндекс карта
 
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
