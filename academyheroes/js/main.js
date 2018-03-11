@@ -109,16 +109,18 @@ $(document).ready(function () {
         $('.faq-block__btn--answer').removeClass('hidden');
         $('.faq-block__btn--roll-up').addClass('hidden');
 
-        $(this).closest('.faq-block__inner').addClass('active');
+        $(this).closest('.faq-block').addClass('active');
+        $(this).siblings('.faq-block__inner').addClass('active');
         $(this).siblings('.faq-block__answer').addClass('active');
         $(this).closest('.faq-block__btn--answer').addClass('hidden');
-        $(this).siblings('.faq-block__btn--roll-up').removeClass('hidden');
+        $(this).siblings('.faq-block__answer').children('.faq-block__btn--roll-up').removeClass('hidden');
     });
 
     $('.faq-block__btn--roll-up').on('click', function() {
         $('.faq-block__answer').removeClass('active');
         $('.faq-block__btn--roll-up').addClass('hidden');
         $('.faq-block__btn--answer').removeClass('hidden');
+        $(this).closest('.faq-block').removeClass('active');
         $(this).closest('.faq-block__inner').removeClass('active');
     });
 
