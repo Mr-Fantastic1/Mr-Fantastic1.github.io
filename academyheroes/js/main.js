@@ -53,10 +53,30 @@ $(document).ready(function () {
             {
                 breakpoint: 1100,
                 settings: {
-                    arrow: false,
+                    arrows: false,
                     dots: true,
                     slidesToShow: 4,
                     slidesToScroll: 4
+                }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+
+            {
+                breakpoint: 500,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             }
         ]
@@ -223,7 +243,6 @@ $(document).ready(function () {
                 // Макет содержимого.
                 iconContentLayout: MyIconContentLayout
             });
-
 
         myMap.geoObjects
             .add(myPlacemark)
