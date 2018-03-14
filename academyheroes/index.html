@@ -44,15 +44,15 @@
             <div class="menu__wrapper"><img class="menu__logo" src="img/general/8-logo.png">
               <div class="menu__logo-text">Академия героев</div>
             </div>
-            <div class="menu__hidden">
+            <div class="menu__hidden" id="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">О лагере</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Программа</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Родителям</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Стоимость</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#camp">О лагере</a></li>
+                <li class="menu__item"><a class="menu__link" href="#master-classes">Программа</a></li>
+                <li class="menu__item"><a class="menu__link" href="#command">Команда</a></li>
+                <li class="menu__item"><a class="menu__link" href="#manuals">Родителям</a></li>
+                <li class="menu__item"><a class="menu__link" href="#next-shift">Стоимость</a></li>
+                <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contacts-b">Контакты</a></li>
               </ul><a class="menu__tel" href="tel:89854368636">+7 985 436 8636</a>
               <ul class="social__list">
                 <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-fb.png"></a></li>
@@ -74,10 +74,10 @@
             <div class="main-bg-sub-header">
               <div class="main-bg-sub-header__number">22-31 января</div>
             </div>
-            <button class="btn camp__btn">связаться</button>
+            <button class="pop-up-btn btn camp__btn">связаться</button>
           </div>
         </section>
-        <section class="section camp">
+        <section class="section camp" id="camp">
           <div class="container">
             <div class="camp__desc">
               <h2 class="title camp__title">О Лагере</h2>
@@ -89,12 +89,12 @@
               <div class="camp__txt">Практический опыт показывает, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития системы массового участия.</div>
             </div>
             <div class="camp__contact">
-              <button class="btn camp__btn">связаться</button>
+              <button class="pop-up-btn btn camp__btn">связаться</button>
               <div class="camp__txt">Если вы уже были на нашем сайте и ищете самый быстрый способ связаться с нами — эта кнопка для Вас, а для тех кто у нас впервые рекомендуем подробно изучить информацию на нашем сайте.</div>
             </div>
           </div>
         </section>
-        <section class="section how-is" style="background-image: url(img/content/pattern.png); background-size: 20%;">
+        <section class="section how-is" id="how-is" style="background-image: url(img/content/pattern.png); background-size: 20%;">
           <div class="container">
             <div class="mobail-slider mobail-slider--hidden how-is__slider">
               <div class="how-is__block">
@@ -135,7 +135,7 @@
             </div>
           </div>
         </section>
-        <section class="section master-classes" style="background-image: url(img/content/3-master-classes.png);">
+        <section class="section master-classes" id="master-classes" style="background-image: url(img/content/3-master-classes.png);">
           <h2 class="title master-classes__title">Зимние мастер-классы</h2>
           <div class="container">
             <div class="mobail-slider">
@@ -158,7 +158,7 @@
             </div>
           </div>
         </section>
-        <section class="section-min question">
+        <section class="section-min question" id="question">
           <div class="container">
             <h2 class="title question__title">Появились вопросы?</h2>
             <form class="question-form">
@@ -180,7 +180,7 @@
             </div>
           </div>
         </section>
-        <section class="section statistics" style="background: url(img/content/4-statistics.png) 50% 0 no-repeat fixed;">
+        <section class="section statistics" id="statistics" style="background: url(img/content/4-statistics.png) 50% 0 no-repeat fixed;">
           <div class="container">
             <div class="statistics-block">
               <div class="statistics-block__title">90%</div>
@@ -204,7 +204,7 @@
             </div>
           </div>
         </section>
-        <section class="section command" style="background-image: url(img/content/pattern.png); background-size: 20%;">
+        <section class="section command" id="command" style="background-image: url(img/content/pattern.png); background-size: 20%;">
           <div class="container" id="wr-tabs">
             <h2 class="title command__title">Команда</h2>
             <div class="content-tab command-full-card-wrapper">
@@ -501,14 +501,14 @@
             </div>
           </div>
         </section>
-        <section class="section-min schedule">
+        <section class="section-min schedule" id="schedule">
           <div class="container">
             <h2 class="title schedule__title">Распорядок дня</h2>
             <button class="btn schedule__btn">один день из жизни лагеря</button>
             <div class="schedule__txt">Узнайте как будет проходить день вашего ребёнка в лагере!</div>
           </div>
         </section>
-        <section class="section conditions" style="background-image: url(img/content/pattern.png); background-size: 20%;">
+        <section class="section conditions" id="conditions" style="background-image: url(img/content/pattern.png); background-size: 20%;">
           <div class="conditions__carusel">
             <div class="conditions-block"><img class="conditions-block__img" src="img/content/6-security.png">
               <div class="conditions-block__wrapper">
@@ -554,7 +554,7 @@
             <button class="btn conditions__dot">Безопасность</button>
           </div>
         </section>
-        <section class="section next-shift" style="background-image: url(img/content/7-fon.png);">
+        <section class="section next-shift" id="next-shift" style="background-image: url(img/content/7-fon.png);">
           <div class="container">
             <h2 class="title next-shift__title">Ближайшая смена</h2>
             <div class="next-shift-block">
@@ -565,7 +565,7 @@
                 <div class="next-shift-block__txt">Участники узнают секреты создания фильма от написания сценария до монтажа, познакомятся с основамиведения блога и смогут пройтись по красной ковровой дорожке!</div>
                 <div class="next-shift-block__old-price">25 400 руб.</div>
                 <div class="next-shift-block__price">22 400 руб.</div>
-                <button class="btn next-shift-block__btn">Забронировать</button>
+                <button class="pop-up-btn btn next-shift-block__btn">Забронировать</button>
                 <div class="next-shift-block__discount">Скидка до конца декабря!</div>
                 <div class="next-shift-block__social">
                   <div class="next-shift-block__social-txt">Или свяжитесь с нами через социальные сети:</div>
@@ -620,7 +620,7 @@
           
           -->
         </section>
-        <section class="section-min shares">
+        <section class="section-min shares" id="shares">
           <div class="container">
             <h2 class="title shares__title">Скидки и Акции</h2>
             <div class="mobail-slider">
@@ -639,7 +639,7 @@
             </div>
           </div>
         </section>
-        <section class="section manuals" style="background: url(img/content/8-fon.png) no-repeat; background-size: cover;">
+        <section class="section manuals" id="manuals" style="background: url(img/content/8-fon.png) no-repeat; background-size: cover;">
           <div class="container">
             <form class="manuals-form">
               <div class="manuals-form__title">Как подготовить ребёнка к лагерю</div>
@@ -649,9 +649,19 @@
               <input class="manuals-form__input manuals-form__input--name" type="email" placeholder="Почта">
               <button class="btn manuals-form__btn">Получить методичку</button>
             </form>
+            <!-- Рады Помочь ответ при отпраке формы-->
+            <div class="hidden manuals-answer">
+              <div class="manuals-answer__title">Рады помочь!</div>
+              <div class="manuals-answer__txt">Мы отправили методичку Вам на почту simsalabim@gmail.com Если вы хотите больше узнать о жизни агеря, посетите наши социальные сети</div>
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-vk-header.png"></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-inst.png"></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-fb.png"></a></li>
+              </ul>
+            </div>
           </div>
         </section>
-        <section class="section faq" style="background-image: url(img/content/pattern.png); background-size: 20%;">
+        <section class="section faq" id="faq" style="background-image: url(img/content/pattern.png); background-size: 20%;">
           <div class="container">
             <h2 class="title faq__title">Нас спрашивают</h2>
             <div class="mobail-slider">
@@ -746,10 +756,10 @@
                 <button class="btn faq-block__btn faq-block__btn--answer">ответ</button>
               </div>
             </div>
-            <button class="btn faq__btn">задать вопрос</button>
+            <button class="pop-up-btn btn faq__btn">задать вопрос</button>
           </div>
         </section>
-        <section class="section-min question">
+        <section class="section-min question" id="question1">
           <div class="container">
             <h2 class="title question__title">Остались вопросы?</h2>
             <form class="question-form">
@@ -771,12 +781,12 @@
             </div>
           </div>
         </section>
-        <section class="section reviews" style="background-image: url(img/content/9-fon.png);">
+        <section class="section reviews" id="reviews" style="background-image: url(img/content/9-fon.png);">
           <div class="container">
             <h2 class="title reviews__title">Отзывы</h2>
           </div>
         </section>
-        <section class="section-min contacts-b">
+        <section class="section-min contacts-b" id="contacts-b">
           <div class="container">
             <h2 class="title contacts-b__title">Контакты</h2>
             <div class="contacts-b__wrapper">
@@ -791,7 +801,7 @@
             </div>
           </div>
         </section>
-        <section>
+        <section id="map-section">
           <div class="map" id="map"></div>
         </section>
       </div>
@@ -802,9 +812,65 @@
             <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-inst.png"></a></li>
             <li class="social__item"><a class="social__link" href="#" target="_blank"><img class="social__icon" src="img/general/6-fb.png"></a></li>
           </ul>
-          <div class="copy">&copy; 2010-2018 “АкадемияГероев” Все права защищены.</div>
+          <div class="copy"><span>&copy; 2010-2018 “АкадемияГероев”</span><span>Все права защищены.</span></div>
         </div>
       </footer>
+    </div>
+    <div class="pop-up-contact">
+      <div class="pop-up-contact__wrapper"><span class="pop-up-contact__close"></span>
+        <ul class="pop-up-contact__list">
+          <li class="pop-up-contact__item"><a class="pop-up-contact__link" href="tel:89854368636"><img class="pop-up-contact__img" src="img/general/5-call.png"></a></li>
+          <li class="pop-up-contact__item"><a class="pop-up-contact__link" href="mailto:akademia.geroev@mail.ru"><img class="pop-up-contact__img" src="img/general/4-email.png"></a></li>
+          <li class="pop-up-contact__item"><a class="pop-up-contact__link" href="#" target="__blank"><img class="pop-up-contact__img" src="img/general/3-vk.png"></a></li>
+          <li class="pop-up-contact__item"><a class="pop-up-contact__link" href="#" target="__blank"><img class="pop-up-contact__img" src="img/general/2-whatsapp.png"></a></li>
+          <li class="pop-up-contact__item"><a class="pop-up-contact__link" href="#" target="__blank"><img class="pop-up-contact__img" src="img/general/1-telegram.png"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pop-up-schedule">
+      <div class="pop-up-schedule__wrapper"><span class="pop-up-schedule__close"></span>
+        <div class="title pop-up-schedule__title">Распорядок дня</div>
+        <div class="pop-up-schedule__inner">
+          <div class="pop-up-schedule__left">
+            <ul class="pop-up-schedule__list">
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">ГИГИЕНИЧЕСКИЕ ПРОЦЕДУРЫ</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+            </ul>
+            <div class="pop-up-schedule__sub-title">ДНЕВНАЯ ПРОГРАММА</div>
+            <ul class="pop-up-schedule__list">
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">ГИГИЕНИЧЕСКИЕ ПРОЦЕДУРЫ</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+            </ul>
+            <div class="pop-up-schedule__sub-title">Вечерняя программа</div>
+            <ul class="pop-up-schedule__list">
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">ГИГИЕНИЧЕСКИЕ ПРОЦЕДУРЫ</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+            </ul>
+            <div class="pop-up-schedule__sub-title">Вечерняя программа</div>
+            <ul class="pop-up-schedule__list">
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">ГИГИЕНИЧЕСКИЕ ПРОЦЕДУРЫ</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+              <li class="pop-up-schedule__item"><span class="pop-up-schedule__time">8:15</span><span class="pop-up-schedule__prog">Поъдем</span></li>
+            </ul>
+          </div>
+          <div class="pop-up-schedule__right"><img class="pop-up-schedule__img" src="img/content/10-schedule.png"><img class="pop-up-schedule__img" src="img/content/10-schedule2.png"></div>
+        </div>
+      </div>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/libs.min.js"></script>
