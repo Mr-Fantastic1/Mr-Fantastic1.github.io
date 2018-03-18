@@ -296,8 +296,9 @@ $(document).ready(function () {
             .add(myPlacemarkWithContent);
 
         myMap.behaviors
-            .disable(['scrollZoom', 'rightMouseButtonMagnifier']);
-
+            .disable(['scrollZoom', 'rightMouseButtonMagnifier'])
+            .disable('scrollZoom') // — это отключает зум колёсиком мышки, всё ок.
+            .disable('drag'); // — это отключает прокрутку карты, но есть одно "но": сама страница также не прокручивается.
     });
 });
 
