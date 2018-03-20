@@ -195,10 +195,19 @@ $(document).ready(function () {
 
 
     $('.next-shift__slider').slick({
-        centerMode: true,
+        infinite:false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        variableWidth: true
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
     });
 
     if (  jQuery(window).width() < 1100 ) {
