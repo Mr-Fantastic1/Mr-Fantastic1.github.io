@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GameMag</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="main-wrap">
+
+<header class="page-header">
+  <button class="btn btn--menu"></button>
+
+  <span class="page-header__menu-text">Меню</span>
+
+  <div id="logo-wrap" class="logo-wrap">
+    <a class="logo-wrap__link" href="index.html">
+      <div class="logo-wrap__text">Game<span class="logo-wrap__color">Mag</span></div>
+      <img class="logo" src="img/logo.png" alt="логотип">
+    </a>
+  </div>
+
+  <nav class="main-menu page-header__main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+    </ul>
+
+    <button id="btn-search" class="btn btn--search"><span class="btn--search-icon"></span></button>
+  </nav>
+
+  <button class="btn btn--login">
+    <span class="btn__login-text">вход</span>
+    <span class="btn__login-img btn__login-img--passive"></span>
+    <span class="btn__login-img btn__login-img--active"></span>
+
+  </button>
+
+  <div class="login-active">
+    <div class="login-active__title">Вход</div>
+
+    <form class="login-form" action="/" method="post">
+      <label class="login-form__label login-form__label--user"><input class="login-form__input" type="text" name="login" placeholder="Логин"></label>
+      <label class="login-form__label login-form__label--pass"><input class="login-form__input" type="password" name="pass" placeholder="Пароль"></label>
+      <button class="btn btn--login-form" type="submit">Войти</button>
+    </form>
+
+    <div class="social-wrap">
+      <div class="social__text">или войти через</div>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+      </ul>
+    </div>
+
+    <div class="link-wrap">
+      <a class="remind-password" href="#">Забыли пароль</a>
+      <a class="check-in" href="#">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<div class="main-content">
+  <div class="top-img-wrap">
+    <img class="top-img" src="img/top-img.jpg">
+  </div>
+
+  <div class="game-page">
+    <div class="container game-page__container">
+      <header class="game-page-header">
+        <div class="game-page-header__wrap">
+          <h1 class="game-page-header__title">Dark Souls 3</h1>
+          <div class="game-page-header__top">
+            <div class="game-page-header__top-number">в топ: <span class="game-page-header__top-current">#25</span>/100</div>
+          </div>
+        </div>
+
+        <div class="game-page-header__buttons">
+          <button class="btn btn__game-page-header btn--game-page-header-our-review active">Наш обзор</button>
+          <button class="btn btn__game-page-header btn--game-page-header-forum">Тема на форуме</button>
+          <button class="btn btn__game-page-header btn--game-page-header-passage">Прохождение</button>
+          <button class="btn btn__game-page-header btn--game-page-header-co-op">32 КО-ОП</button>
+          <button class="btn btn__game-page-header btn--game-page-header-help">Помощь</button>
+          <button class="btn btn__game-page-header btn--game-page-header-wish-list">В виш-лист</button>
+          <button class="btn btn__game-page-header btn--game-page-header-favorites">В избранное</button>
+          <button class="btn btn__game-page-header btn--game-page-header-write-review">Написать обзор</button>
+        </div>
+      </header>
+
+      <div class="game-page__flex">
+        <section class="game-page-left">
+          <img src="img/about-game-shovel-knight.jpg" alt="" class="game-page__img">
+
+          <div class="game-page-block">
+            <div class="game-page-block__title">Дата выхода:</div>
+
+            <div class="game-page-date">
+              <span class="game-page-date__title">США:</span>
+              <span class="game-page-date__txt">28 февраля 2017</span>
+            </div>
+
+            <div class="game-page-date">
+              <span class="game-page-date__title">Европа:</span>
+              <span class="game-page-date__txt"> 1 марта 2017</span>
+            </div>
+
+            <div class="game-page-date">
+              <span class="game-page-date__title">Япония:</span>
+              <span class="game-page-date__txt"> 24 марта 2017</span>
+            </div>
+          </div>
+
+          <div class="about-game__desc">
+            <div class="platforms">
+              <span class="platforms__title about-game__titles">Платформы:</span>
+              <div class="platforms__names about-game__names">
+                <a class="support-item support-item--switch-no-opacity" href="#">Switch</a>
+              </div>
+            </div>
+
+            <div class="developer">
+              <span class="developer__title about-game__titles">Разработчик:</span>
+              <a class="developer__name about-game__names" href="#">Yacht Club Games</a>
+            </div>
+
+            <div class="publisher">
+              <span class="publisher__title about-game__titles">Издатель:</span>
+              <a class="publisher__name about-game__names" href="#">Yacht Club Games</a>
+            </div>
+
+            <div class="website">
+              <span class="website__title about-game__titles">Сайт:</span>
+              <a class="website__name website__name--td about-game__names" href="http://yachtclubga.ru" target="_blank
+">yachtclubga.ru</a>
+            </div>
+
+            <div class="genres">
+              <span class="genres__title about-game__titles">Жанры:</span>
+              <p class="genres__name genres__name--up"><a class="genres__name-link" href="#">Adventure</a>, <a class="genres__name-link" href="#">Platformer</a></p>
+            </div>
+
+            <div class="selling">
+              <span class="selling__title about-game__titles">Продажи:</span>
+              <span class="selling__name about-game__names">5,500,000</span>
+            </div>
+
+            <div class="website">
+              <span class="website__title about-game__titles">Сайт:</span>
+              <div class="website__names about-game__names"><a class="website__link" href="#">Dark Souls</a>, <a class="website__link" href="#">Dead Souls</a></div>
+            </div>
+
+            <div class="duration">
+              <span class="about-game__titles">Продолжительность:</span>
+              <span class="about-game__names">154 ч.</span>
+            </div>
+          </div>
+
+          <div class="advertising-right">
+            <span class="advertising-right__text">Партнерский материал</span>
+            <img class="advertising-right__text" src="img/advertising-ps4-2.jpg" alt="PS4">
+          </div>
+        </section>
+
+        <section class="game-page-right">
+          <div class="game-page-desc">
+
+            <div class="game-page-desc__wrap">
+              <h2 class="game-page-desc__title">Об игре:</h2>
+
+              <div class="game-page-desc__txt">Dark Souls III - финальная игра в серии Souls-Bloodborne, которая обещает самый атмосферный в серии мир, высокую скорость игрового процесса и полномас-
+                штабную ролевую систему со всей вариативностью
+                в создании билдов персонажей. Игра создается автором серии Хидетакой Миядзаки и закроет целую главу
+                в истории жанра ролевых игр. По итогам Gamemag 2015 года, игра стала самым ожидаемым проектом 2016 года.</div>
+            </div>
+
+            <div class="game-page-desc__wrap game-page-desc__wrap--margin">
+              <div class="game-page-desc__sales-title">Продажи игры в мире: </div>
+
+              <img src="img/grafik.png" alt="" class="game-page-desc__img">
+            </div>
+          </div>
+
+          <div class="tabs game-page-tabs">
+            <ul class="tabs__caption game-page-tabs__caption">
+              <li class="active game-page-tabs__item game-page-tabs__item--were-playing"><span class="game-page-tabs__number">256</span> <span class="game-page-tabs__name game-page-tabs__name--were-playing">Играли</span></li>
+              <li class="game-page-tabs__item game-page-tabs__item--are-playing"><span class="game-page-tabs__number">54</span> <span class="game-page-tabs__name game-page-tabs__name--are-playing">Играют</span></li>
+              <li class="game-page-tabs__item game-page-tabs__item--want"><span class="game-page-tabs__number">79</span> <span class="game-page-tabs__name game-page-tabs__name--want">Хотят</span></li>
+              <li class="game-page-tabs__item game-page-tabs__item--passed"><span class="game-page-tabs__number">98</span> <span class="game-page-tabs__name game-page-tabs__name--passed">Прошли</span></li>
+            </ul>
+
+            <ul class="tabs__content game-page-tabs__content active">
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user"><span>Пользователь</span></div>
+                <div class="game-page-tabs__was"><span>Заходил</span></div>
+                <div class="game-page-tabs__console"><span>Консоль</span></div>
+                <div class="game-page-tabs__trophies"><span>Трофеи</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-profile/outher-user-profile-img.png" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bigby</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>3 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--xbox-one" href="#">Xbox One</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-profile/outher-user-profile-img.png" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bigby</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--ps4" href="#">PS4</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-profile/outher-user-profile-img.png" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bigby</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--xbox-one" href="#">Xbox One</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-profile/outher-user-profile-img.png" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bigby</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>3 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--xbox-one" href="#">Xbox One</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-profile/outher-user-profile-img.png" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bey1ndTheGrave</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--ps4" href="#">PS4</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-profile/outher-user-profile-img.png" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bigby</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--xbox-one" href="#">Xbox One</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-profile/outher-user-profile-img.png" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bigby</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--xbox-one" href="#">Xbox One</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-profile/outher-user-profile-img.png" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">gingerbread1306</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--xbox-one" href="#">Xbox One</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+            </ul>
+
+            <ul class="tabs__content game-page-tabs__content">
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user"><span>Пользователь</span></div>
+                <div class="game-page-tabs__was"><span>Заходил</span></div>
+                <div class="game-page-tabs__console"><span>Консоль</span></div>
+                <div class="game-page-tabs__trophies"><span>Трофеи</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic2.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">unkucher</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>30 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic2.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bey1ndTheGrave</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic2.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">unkucher</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>30 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic2.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bey1ndTheGrave</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic2.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">unkucher</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>30 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic2.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bey1ndTheGrave</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic2.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">unkucher</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>30 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic2.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Bey1ndTheGrave</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+            </ul>
+
+            <ul class="tabs__content game-page-tabs__content">
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user"><span>Пользователь</span></div>
+                <div class="game-page-tabs__was"><span>Заходил</span></div>
+                <div class="game-page-tabs__console"><span>Консоль</span></div>
+                <div class="game-page-tabs__trophies"><span>Трофеи</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic3.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">BlackBird95</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>120 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic3.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Cloud</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>1ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic3.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">BlackBird95</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>120 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic3.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Cloud</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>1ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic3.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">BlackBird95</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>120 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic3.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Cloud</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>1ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic3.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">BlackBird95</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>120 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic3.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">Cloud</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>1ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+            </ul>
+
+            <ul class="tabs__content game-page-tabs__content">
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user"><span>Пользователь</span></div>
+                <div class="game-page-tabs__was"><span>Заходил</span></div>
+                <div class="game-page-tabs__console"><span>Консоль</span></div>
+                <div class="game-page-tabs__trophies"><span>Трофеи</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic4.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">gingerbread1306</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic4.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">GameMasta</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>21ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic4.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">gingerbread1306</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic4.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">GameMasta</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>21ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic4.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">gingerbread1306</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic4.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">GameMasta</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>21ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic4.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">gingerbread1306</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>12 ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--switch" href="#">Swicth</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+
+              <li class="game-page-tabs__item">
+                <div class="game-page-tabs__user">
+                  <div class="game-page-tabs__wrap-user-img">
+                    <img class="game-page-tabs__user-img" src="img/user-pic4.jpg" alt="">
+                  </div>
+
+                  <div class="game-page-tabs__user-name">GameMasta</div>
+                </div>
+
+                <div class="game-page-tabs__was"><span>21ч. назад</span></div>
+                <div class="game-page-tabs__console"><a class="support-item support-item--pc" href="#">PC</a></div>
+                <div class="game-page-tabs__trophies"><span>56/56</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-the-game">
+            <button class="btn btn--about-the-game">
+              <span class="btn__about-the-game-txt">Трофеи</span>
+              <span class="btn__about-the-game-img btn__about-the-game-img--down"></span>
+              <span class="btn__about-the-game-img btn__about-the-game-img--up"></span>
+            </button>
+
+            <ul class="about-the-game-header">
+              <li class="about-the-game-header__list"><a href="#" class="about-the-game-header__link">Новости</a></li>
+              <li class="about-the-game-header__list"><a href="#" class="about-the-game-header__link active">Трофеи</a></li>
+              <li class="about-the-game-header__list"><a href="#" class="about-the-game-header__link">Ачивменты</a></li>
+              <li class="about-the-game-header__list"><a href="#" class="about-the-game-header__link">Похожие игры</a></li>
+              <li class="about-the-game-header__list"><a href="#" class="about-the-game-header__link">Видео</a></li>
+              <li class="about-the-game-header__list"><a href="#" class="about-the-game-header__link">Скриншоты</a></li>
+              <li class="about-the-game-header__list"><a href="#" class="about-the-game-header__link">Стримы</a></li>
+            </ul>
+
+            <ul class="about-the-game-achievements">
+              <li class="about-the-game-achievements__item">
+                <img src="img/dark-souls-img.jpg" alt="">
+                <div class="about-the-game-achievements__desc">
+                  <div class="about-the-game-achievements__title">To Link the First Flame</div>
+                  <div class="about-the-game-achievements__txt">Reach "To Link the First Flame" ending.</div>
+                </div>
+              </li>
+              <li class="about-the-game-achievements__item">
+                <img src="img/dark-souls-img.jpg" alt="">
+                <div class="about-the-game-achievements__desc">
+                  <div class="about-the-game-achievements__title">To Link the First Flame</div>
+                  <div class="about-the-game-achievements__txt">Reach "To Link the First Flame" ending.</div>
+                </div>
+              </li>
+              <li class="about-the-game-achievements__item">
+                <img src="img/dark-souls-img.jpg" alt="">
+                <div class="about-the-game-achievements__desc">
+                  <div class="about-the-game-achievements__title">To Link the First Flame</div>
+                  <div class="about-the-game-achievements__txt">Reach "To Link the First Flame" ending.</div>
+                </div>
+              </li>
+              <li class="about-the-game-achievements__item">
+                <img src="img/dark-souls-img.jpg" alt="">
+                <div class="about-the-game-achievements__desc">
+                  <div class="about-the-game-achievements__title">To Link the First Flame</div>
+                  <div class="about-the-game-achievements__txt">Reach "To Link the First Flame" ending.</div>
+                </div>
+              </li>
+              <li class="about-the-game-achievements__item">
+                <img src="img/dark-souls-img.jpg" alt="">
+                <div class="about-the-game-achievements__desc">
+                  <div class="about-the-game-achievements__title">To Link the First Flame</div>
+                  <div class="about-the-game-achievements__txt">Reach "To Link the First Flame" ending.</div>
+                </div>
+              </li>
+              <li class="about-the-game-achievements__item">
+                <img src="img/dark-souls-img.jpg" alt="">
+                <div class="about-the-game-achievements__desc">
+                  <div class="about-the-game-achievements__title">To Link the First Flame</div>
+                  <div class="about-the-game-achievements__txt">Reach "To Link the First Flame" ending.</div>
+                </div>
+              </li>
+              <li class="about-the-game-achievements__item">
+                <img src="img/dark-souls-img.jpg" alt="">
+                <div class="about-the-game-achievements__desc">
+                  <div class="about-the-game-achievements__title">To Link the First Flame</div>
+                  <div class="about-the-game-achievements__txt">Reach "To Link the First Flame" ending.</div>
+                </div>
+              </li>
+              <li class="about-the-game-achievements__item">
+                <img src="img/dark-souls-img.jpg" alt="">
+                <div class="about-the-game-achievements__desc">
+                  <div class="about-the-game-achievements__title">To Link the First Flame</div>
+                  <div class="about-the-game-achievements__txt">Reach "To Link the First Flame" ending.</div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn btn--user-profile-latest-events-more about-the-game__btn">Показать еще</button>
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <nav class="main-menu page-footer__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrap">
+      <a class="logo-wrap__link" href="index.html">
+        <div class="logo-wrap__text">GameMag</div>
+        <img class="logo" src="img/logo-footer.png" alt="логотип">
+      </a>
+    </div>
+
+    <div class="page-footer__desc">
+      <div class="page-footer__text">
+        <p>Свидетельство о регистрации средства массовой информации Эл № ФС77-26762 от 29 декабря 2006 года.</p>
+        <p>Выдано Федеральной службой по надзору за соблюдением законодательства с сфере массовых коммуникаций и охране культурного наследия.</p>
+      </div>
+
+      <span>&copy; 1996-2017 GameMAG.ru</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<div class="search">
+  <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">Х</button>
+  <div class="search__inner search__inner--up">
+    <form class="search__form" action="">
+      <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </div>
+  <div class="search__inner search__inner--down">
+  </div>
+</div><!-- /search -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

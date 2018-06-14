@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GameMag</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="main-wrap">
+
+<header class="page-header">
+  <button class="btn btn--menu"></button>
+
+  <span class="page-header__menu-text">Меню</span>
+
+  <div id="logo-wrap" class="logo-wrap">
+    <a class="logo-wrap__link" href="index.html">
+      <div class="logo-wrap__text">Game<span class="logo-wrap__color">Mag</span></div>
+      <img class="logo" src="img/logo.png" alt="логотип">
+    </a>
+  </div>
+
+  <nav class="main-menu page-header__main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+    </ul>
+
+    <button id="btn-search" class="btn btn--search"><span class="btn--search-icon"></span></button>
+  </nav>
+
+  <button class="btn btn--login">
+    <span class="btn__login-text">вход</span>
+    <span class="btn__login-img btn__login-img--passive"></span>
+    <span class="btn__login-img btn__login-img--active"></span>
+
+  </button>
+
+  <div class="login-active">
+    <div class="login-active__title">Вход</div>
+
+    <form class="login-form" action="/" method="post">
+      <label class="login-form__label login-form__label--user"><input class="login-form__input" type="text" name="login" placeholder="Логин"></label>
+      <label class="login-form__label login-form__label--pass"><input class="login-form__input" type="password" name="pass" placeholder="Пароль"></label>
+      <button class="btn btn--login-form" type="submit">Войти</button>
+    </form>
+
+    <div class="social-wrap">
+      <div class="social__text">или войти через</div>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+      </ul>
+    </div>
+
+    <div class="link-wrap">
+      <a class="remind-password" href="#">Забыли пароль</a>
+      <a class="check-in" href="#">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<div class="main-content">
+  <div class="top-img-wrap">
+    <img class="top-img" src="img/top-img.jpg">
+  </div>
+
+  <div class="user-profile-section">
+    <div class="user-profile-section__top">
+      <span class="user-profile-section__badge user-profile-section__ace">ace</span>
+      <div class="user-profile-section__badge user-profile-section__crown">
+        <img src="img/user-profile/crown.png" alt="">
+      </div>
+      <span class="user-profile-section__badge user-profile-section__gms">1430 gms</span>
+      <span class="user-profile-section__badge user-profile-section__gmp">99.18 gmp</span>
+      <span class="user-profile-section__badge user-profile-section__rank">Админ</span>
+    </div>
+
+    <div class="user-profile-section__img-bg-wrap">
+      <img src="img/user-profile/user-profile-bg.jpg" alt="" class="user-profile-section__img-bg">
+      <img src="img/user-profile/user-profile-img.jpg" alt="" class="user-profile-section__img">
+    </div>
+
+    <div class="user-profile-section__desc">
+      <p>Каждый охотник желает знать, где сидит SJW-адепт</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <button class="btn btn--user-profile-menu">
+      <span class="btn__user-profile-menu-txt">Профиль</span>
+      <span class="btn__user-profile-menu-img btn__user-profile-menu-img--down"></span>
+      <span class="btn__user-profile-menu-img btn__user-profile-menu-img--up"></span>
+    </button>
+
+    <nav class="user-profile-menu">
+      <ul class="user-profile-menu__list">
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link active">Профиль</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">Игры</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">События</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">Виш-лист</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-profile-games user-profile-games--width">
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill"></div>
+          <div class="user-profile-games__percent">0%</div>
+        </div>
+
+        <div class="user-profile-games__date">2 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--22"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--22">22%</div>
+        </div>
+
+        <div class="user-profile-games__date">16 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--34"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--34">34%</div>
+        </div>
+
+        <div class="user-profile-games__date">60 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--1"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--1">1%</div>
+        </div>
+
+        <div class="user-profile-games__date">43 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--82"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--82">82%</div>
+        </div>
+
+        <div class="user-profile-games__date">160 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--86"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--86">86%</div>
+        </div>
+
+        <div class="user-profile-games__date">21 день назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--100"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--100">100%</div>
+        </div>
+
+        <div class="user-profile-games__date">3 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--67"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--67">67%</div>
+        </div>
+
+        <div class="user-profile-games__date">Вчера</div>
+      </div>
+    </div>
+
+    <div class="user-profile-flex">
+      <div class="user-profile-left">
+        <section class="user-profile-latest-events">
+          <header class="user-profile-latest-events-header">
+            <h2 class="user-profile-latest-events-header__title">Последние события</h2>
+
+            <span class="user-profile-latest-events-header__arrow user-profile-latest-events-header__arrow--up"></span>
+            <span class="user-profile-latest-events-header__arrow user-profile-latest-events-header__arrow--down"></span>
+          </header>
+
+          <div class="user-profile-latest-events__wrap user-profile-latest-events__wrap--show">
+            <div class="user-profile-latest-events-achievements">
+              <div class="user-profile-latest-events__title">10.06.2017</div>
+
+              <div class="user-profile-latest-events-achievements__wrap">
+                <img class="user-profile-latest-events-achievements__game-img" src="img/game-img/tekken-7.jpg" alt="">
+
+                <ul class="user-profile-latest-events-achievements__list">
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей Неплохо в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--gold"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей Неплохо в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--silver"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-profile-latest-events-achievements">
+              <div class="user-profile-latest-events__title">09.06.2017</div>
+
+              <div class="user-profile-latest-events-achievements__wrap">
+                <img class="user-profile-latest-events-achievements__game-img" src="img/game-img/tekken-7.jpg" alt="">
+
+                <ul class="user-profile-latest-events-achievements__list">
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей Неплохо в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей Неплохо в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-profile-latest-events-achievements">
+              <div class="user-profile-latest-events__title">07.06.2017</div>
+
+              <div class="user-profile-latest-events-achievements__wrap">
+                <img class="user-profile-latest-events-achievements__game-img" src="img/game-img/tekken-7.jpg" alt="">
+
+                <ul class="user-profile-latest-events-achievements__list">
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Пора</a> в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Пора</a> в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Пора</a> в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Думаешь, ты можешь со мной тягаться?</a> в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-profile-latest-events-achievements">
+              <div class="user-profile-latest-events__title">03.06.2017</div>
+
+              <div class="user-profile-latest-events-achievements__wrap">
+                <img class="user-profile-latest-events-achievements__game-img" src="img/game-img/tekken-7.jpg" alt="">
+
+                <ul class="user-profile-latest-events-achievements__list">
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+
+                  <li class="user-profile-latest-events-achievements__item">
+                    <span class="user-profile-latest-events-achievements__time">13:46</span>
+                    <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                    <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                    <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="btn btn--user-profile-latest-events-more">Показать еще</button>
+          </div>
+        </section>
+
+        <section class="user-profile-bottom">
+          <div class="user-profile-bottom-schedule">
+            <div class="user-profile-bottom-schedule__title">График качества</div>
+            <img class="user-profile-bottom-schedule__img" src="img/user-profile/schedule.jpg">
+          </div>
+
+          <div class="user-profile-bottom-news">
+            <div class="user-profile-bottom-news__title">Новости пользователя</div>
+
+            <div class="user-profile-bottom-news__item">
+              <a class="user-profile-bottom-news__link" href="#"></a>
+              <div class="user-profile-bottom-news__number user-profile-bottom-news__number--high">65</div>
+              <div class="user-profile-bottom-news__txt">Обзор Tekken 7</div>
+            </div>
+
+            <div class="user-profile-bottom-news__item">
+              <a class="user-profile-bottom-news__link" href="#"></a>
+              <div class="user-profile-bottom-news__number user-profile-bottom-news__number--middle">21</div>
+              <div class="user-profile-bottom-news__txt">Обзор Get Even</div>
+            </div>
+
+            <div class="user-profile-bottom-news__item">
+              <a class="user-profile-bottom-news__link" href="#"></a>
+              <div class="user-profile-bottom-news__number user-profile-bottom-news__number--little">18</div>
+              <div class="user-profile-bottom-news__txt">Обзор The Walking Dead: The Telltale Series - A New Frontier Episode 5: From the Gallows</div>
+            </div>
+
+            <div class="user-profile-bottom-news__item">
+              <a class="user-profile-bottom-news__link" href="#"></a>
+              <div class="user-profile-bottom-news__number user-profile-bottom-news__number--middle">21</div>
+              <div class="user-profile-bottom-news__txt">Обзор Tokyo 42</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="user-profile-aside">
+        <div class="user-profile-info">
+          <h2 class="user-profile-info__title">Информация</h2>
+
+          <span class="user-profile-info__arrow user-profile-info__arrow--down"></span>
+          <span class="user-profile-info__arrow user-profile-info__arrow--up"></span>
+
+          <div class="user-profile-info__block">
+            <div class="user-profile-info__support-wrap">
+              <div class="user-profile-info__bg user-profile-info__bg--controller"></div>
+
+              <div class="user-profile-info__support">
+                <a class="support-item support-item--switch-no-opacity" href="#">Switch</a>
+                <a class="support-item support-item--xbox-one-no-opacity" href="#">Xbox One</a>
+                <a class="support-item support-item--3ds-no-opacity" href="#">3DS</a>
+                <a class="support-item support-item--ps4-no-opacity" href="#">PS4</a>
+                <a class="support-item support-item--pc-no-opacity" href="#">PC</a>
+                <a class="support-item support-item--wiiu-no-opacity" href="#">WIIU</a>
+                <a class="support-item support-item--vita-no-opacity" href="#">VITA</a>
+                <a class="support-item support-item--ps3-no-opacity" href="#">PS3</a>
+                <a class="support-item support-item--360-no-opacity" href="#">360</a>
+                <a class="support-item support-item--psp-no-opacity" href="#">PSP</a>
+                <a class="support-item support-item--nds-no-opacity" href="#">NDS</a>
+                <a class="support-item support-item--ps2-no-opacity" href="#">PS2</a>
+                <a class="support-item support-item--ios-no-opacity" href="#">IOS</a>
+              </div>
+            </div>
+
+            <div class="user-profile-info__mouse">
+              <div class="user-profile-info__bg user-profile-info__bg--mouse"></div>
+
+              <span class="user-profile-info__mouse-txt">Устарела</span>
+            </div>
+
+            <div class="user-profile-info-registration">
+              <span class="user-profile-info-registration__title">Регистрация:</span>
+              <span class="user-profile-info-registration__txt">10.01.2012 15:46</span>
+            </div>
+
+            <div class="user-profile-info-login">
+              <span class="user-profile-info-login__title">Последний вход:</span>
+              <span class="user-profile-info-login__txt">5 минут назад</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-profile-statistics">
+          <h2 class="user-profile-statistics__title">Статистика</h2>
+
+          <span class="user-profile-statistics__arrow user-profile-statistics__arrow--down"></span>
+          <span class="user-profile-statistics__arrow user-profile-statistics__arrow--up"></span>
+
+          <div class="user-profile-statistics__block">
+            <div class="user-profile-statistics-number">
+              <div class="user-profile-statistics-focus">
+                <div class="user-profile-statistics-focus__title">Фокус</div>
+                <div class="user-profile-statistics-focus__number">629</div>
+              </div>
+
+              <div class="user-profile-statistics-articles">
+                <div class="user-profile-statistics-articles__title">Статьи</div>
+                <div class="user-profile-statistics-articles__number">2760</div>
+              </div>
+
+              <div class="user-profile-statistics-comments">
+                <div class="user-profile-statistics-comments__title">Коменты</div>
+                <div class="user-profile-statistics-comments__number">5400</div>
+              </div>
+            </div>
+
+            <div class="user-profile-statistics-got">
+              <div class="user-profile-statistics-got__title">Получил:</div>
+              <div class="user-profile-statistics-got__like">175842</div>
+              <div class="user-profile-statistics-got__dislike">1583</div>
+            </div>
+
+            <div class="user-profile-statistics-gave">
+              <div class="user-profile-statistics-gave__title">Получил:</div>
+              <div class="user-profile-statistics-gave__like">57659</div>
+              <div class="user-profile-statistics-gave__dislike">0</div>
+            </div>
+
+            <div class="user-profile-statistics-author">
+              <div class="user-profile-statistics-author__title">Любимый автор:</div>
+              <div class="user-profile-statistics-author__name"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-profile-psn">
+          <h2 class="user-profile-psn__title">Playstation Network</h2>
+
+          <span class="user-profile-psn__arrow user-profile-psn__arrow--down"></span>
+          <span class="user-profile-psn__arrow user-profile-psn__arrow--up"></span>
+
+          <div class="user-profile-psn__block">
+            <div class="user-profile-psn-avatar">
+              <img class="user-profile-psn-avatar__img" src="img/user-profile/psn-avatar.jpg">
+              <div class="user-profile-psn-avatar__txt">ACEtheVAMPIRE</div>
+            </div>
+
+            <div class="user-profile-psn-goblets">
+              <div class="user-profile-psn-goblets__goblet user-profile-psn-goblets__goblet--white">5</div>
+              <div class="user-profile-psn-goblets__goblet user-profile-psn-goblets__goblet--gold">61</div>
+              <div class="user-profile-psn-goblets__goblet user-profile-psn-goblets__goblet--silver">289</div>
+              <div class="user-profile-psn-goblets__goblet user-profile-psn-goblets__goblet--bronze">1565</div>
+            </div>
+
+            <div class="user-profile-psn-level-wrap">
+              <div class="user-profile-psn-level">
+                <div class="user-profile-psn-level__title">Уровень: 14</div>
+
+                <div class="user-profile-games__scale-wrap">
+                  <div class="user-profile-games__scale"></div>
+                  <div class="user-profile-games__fill user-profile-games__fill--34 user-profile-games__fill--color"></div>
+                  <div class="user-profile-games__percent user-profile-games__percent--34 user-profile-games__percent--color">34%</div>
+                </div>
+              </div>
+
+              <div class="user-profile-psn-all">
+                <div class="user-profile-psn-all__title">Всего:</div>
+                <div class="user-profile-psn-all__number">1920</div>
+              </div>
+            </div>
+
+            <div class="user-profile-psn-games">
+              <a class="user-profile-psn-games__link" href="#"><img src="img/games-in-material-img5.jpg" alt="" class="user-profile-psn-games__game"></a>
+              <a class="user-profile-psn-games__link" href="#"><img src="img/games-in-material-img5.jpg" alt="" class="user-profile-psn-games__game"></a>
+              <a class="user-profile-psn-games__link" href="#"><img src="img/games-in-material-img5.jpg" alt="" class="user-profile-psn-games__game"></a>
+              <a class="user-profile-psn-games__link" href="#"><img src="img/games-in-material-img5.jpg" alt="" class="user-profile-psn-games__game"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-profile-xl">
+          <h2 class="user-profile-xl__title">Xbox Live</h2>
+
+          <span class="user-profile-xl__arrow user-profile-xl__arrow--down"></span>
+          <span class="user-profile-xl__arrow user-profile-xl__arrow--up"></span>
+
+          <div class="user-profile-xl__block">
+            <div class="user-profile-xl-avatar">
+              <img class="user-profile-xl-avatar__img" src="img/user-profile/xl-avatar.jpg">
+              <div class="user-profile-xl-avatar__txt">ACEtheVAMPIRE</div>
+            </div>
+
+            <div class="user-profile-xl-evaluation">
+              <div class="user-profile-xl-evaluation__stars">
+                <span class="user-profile-xl-evaluation__star"></span>
+                <span class="user-profile-xl-evaluation__star"></span>
+                <span class="user-profile-xl-evaluation__star"></span>
+                <span class="user-profile-xl-evaluation__star"></span>
+                <span class="user-profile-xl-evaluation__star"></span>
+              </div>
+
+              <div class="user-profile-xl-evaluation__g">
+                <div class="user-profile-xl-evaluation__g-img"></div>
+                <div class="user-profile-xl-evaluation__number">110615 Silver</div>
+              </div>
+            </div>
+
+            <div class="user-profile-xl-games">
+              <a class="user-profile-psn-games__link" href="#"><img src="img/games-in-material-img4.jpg" alt="" class="user-profile-xl-games__game"></a>
+              <a class="user-profile-psn-games__link" href="#"><img src="img/games-in-material-img4.jpg" alt="" class="user-profile-xl-games__game"></a>
+              <a class="user-profile-psn-games__link" href="#"><img src="img/games-in-material-img4.jpg" alt="" class="user-profile-xl-games__game"></a>
+              <a class="user-profile-psn-games__link" href="#"><img src="img/games-in-material-img4.jpg" alt="" class="user-profile-xl-games__game"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-profile-fans">
+          <h2 class="user-profile-fans__title">Фанаты</h2>
+
+          <span class="user-profile-fans__arrow user-profile-fans__arrow--down"></span>
+          <span class="user-profile-fans__arrow user-profile-fans__arrow--up"></span>
+
+          <div class="user-profile-fans__block user-profile-fans__block--bn">
+            <div class="user-profile-fans__item">
+              <div class="user-profile-fans__fan">
+                <div class="user-profile-fans__fan-img-wrap">
+                  <img class="user-profile-fans__fan-img" src="img/user-profile/outher-user-profile-img.png">
+                </div>
+                <a class="user-profile-fans__fan-nickname" href="#">GameMasta</a>
+              </div>
+
+              <div class="user-profile-fans__statistics">581</div>
+            </div>
+
+            <div class="user-profile-fans__item">
+              <div class="user-profile-fans__fan">
+                <div class="user-profile-fans__fan-img-wrap">
+                  <img class="user-profile-fans__fan-img" src="img/user-profile/outher-user-profile-img.png">
+                </div>
+                <a class="user-profile-fans__fan-nickname" href="#">GameMasta</a>
+              </div>
+
+              <div class="user-profile-fans__statistics">581</div>
+            </div>
+
+            <div class="user-profile-fans__item">
+              <div class="user-profile-fans__fan">
+                <div class="user-profile-fans__fan-img-wrap">
+                  <img class="user-profile-fans__fan-img" src="img/user-profile/outher-user-profile-img.png">
+                </div>
+                <a class="user-profile-fans__fan-nickname" href="#">GameMasta</a>
+              </div>
+
+              <div class="user-profile-fans__statistics">581</div>
+            </div>
+
+            <div class="user-profile-fans__item">
+              <div class="user-profile-fans__fan">
+                <div class="user-profile-fans__fan-img-wrap">
+                  <img class="user-profile-fans__fan-img" src="img/user-profile/outher-user-profile-img.png">
+                </div>
+                <a class="user-profile-fans__fan-nickname" href="#">GameMasta</a>
+              </div>
+
+              <div class="user-profile-fans__statistics">581</div>
+            </div>
+
+            <div class="user-profile-fans__item">
+              <div class="user-profile-fans__fan">
+                <div class="user-profile-fans__fan-img-wrap">
+                  <img class="user-profile-fans__fan-img" src="img/user-profile/outher-user-profile-img.png">
+                </div>
+                <a class="user-profile-fans__fan-nickname" href="#">GameMasta</a>
+              </div>
+
+              <div class="user-profile-fans__statistics">581</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <nav class="main-menu page-footer__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="games-year.html">Игры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrap">
+      <a class="logo-wrap__link" href="index.html">
+        <div class="logo-wrap__text">GameMag</div>
+        <img class="logo" src="img/logo-footer.png" alt="логотип">
+      </a>
+    </div>
+
+    <div class="page-footer__desc">
+      <div class="page-footer__text">
+        <p>Свидетельство о регистрации средства массовой информации Эл № ФС77-26762 от 29 декабря 2006 года.</p>
+        <p>Выдано Федеральной службой по надзору за соблюдением законодательства с сфере массовых коммуникаций и охране культурного наследия.</p>
+      </div>
+
+      <span>&copy; 1996-2017 GameMAG.ru</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<div class="search">
+  <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">Х</button>
+  <div class="search__inner search__inner--up">
+    <form class="search__form" action="">
+      <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </div>
+  <div class="search__inner search__inner--down">
+  </div>
+</div><!-- /search -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GameMag</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="main-wrap">
+
+<header class="page-header">
+  <button class="btn btn--menu"></button>
+
+  <span class="page-header__menu-text">Меню</span>
+
+  <div id="logo-wrap" class="logo-wrap">
+    <a class="logo-wrap__link" href="index.html">
+      <div class="logo-wrap__text">Game<span class="logo-wrap__color">Mag</span></div>
+      <img class="logo" src="img/logo.png" alt="логотип">
+    </a>
+  </div>
+
+  <nav class="main-menu page-header__main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+    </ul>
+
+    <button id="btn-search" class="btn btn--search"><span class="btn--search-icon"></span></button>
+  </nav>
+
+  <button class="btn btn--login">
+    <span class="btn__login-text">вход</span>
+    <span class="btn__login-img btn__login-img--passive"></span>
+    <span class="btn__login-img btn__login-img--active"></span>
+
+  </button>
+
+  <div class="login-active">
+    <div class="login-active__title">Вход</div>
+
+    <form class="login-form" action="/" method="post">
+      <label class="login-form__label login-form__label--user"><input class="login-form__input" type="text" name="login" placeholder="Логин"></label>
+      <label class="login-form__label login-form__label--pass"><input class="login-form__input" type="password" name="pass" placeholder="Пароль"></label>
+      <button class="btn btn--login-form" type="submit">Войти</button>
+    </form>
+
+    <div class="social-wrap">
+      <div class="social__text">или войти через</div>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+      </ul>
+    </div>
+
+    <div class="link-wrap">
+      <a class="remind-password" href="#">Забыли пароль</a>
+      <a class="check-in" href="#">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<div class="main-content">
+  <div class="top-img-wrap">
+    <img class="top-img" src="img/top-img.jpg">
+  </div>
+
+  <div class="user-profile-section">
+    <div class="user-profile-section__top">
+      <span class="user-profile-section__badge user-profile-section__ace">ace</span>
+      <div class="user-profile-section__badge user-profile-section__crown">
+        <img src="img/user-profile/crown.png" alt="">
+      </div>
+      <span class="user-profile-section__badge user-profile-section__gms">1430 gms</span>
+      <span class="user-profile-section__badge user-profile-section__gmp">99.18 gmp</span>
+      <span class="user-profile-section__badge user-profile-section__rank">Админ</span>
+    </div>
+
+    <div class="user-profile-section__img-bg-wrap">
+      <img src="img/user-profile/user-profile-bg.jpg" alt="" class="user-profile-section__img-bg">
+      <img src="img/user-profile/user-profile-img.jpg" alt="" class="user-profile-section__img">
+    </div>
+
+    <div class="user-profile-section__desc">
+      <p>Каждый охотник желает знать, где сидит SJW-адепт</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="user-profile-menu">
+      <ul class="user-profile-menu__list">
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">Профиль</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link active">Игры</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">События</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">Виш-лист</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-profile-games">
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill"></div>
+          <div class="user-profile-games__percent">0%</div>
+        </div>
+
+        <div class="user-profile-games__date">2 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--22"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--22">22%</div>
+        </div>
+
+        <div class="user-profile-games__date">16 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--34"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--34">34%</div>
+        </div>
+
+        <div class="user-profile-games__date">60 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--1"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--1">1%</div>
+        </div>
+
+        <div class="user-profile-games__date">43 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--82"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--82">82%</div>
+        </div>
+
+        <div class="user-profile-games__date">160 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--86"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--86">86%</div>
+        </div>
+
+        <div class="user-profile-games__date">21 день назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--100"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--100">100%</div>
+        </div>
+
+        <div class="user-profile-games__date">3 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--67"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--67">67%</div>
+        </div>
+
+        <div class="user-profile-games__date">Вчера</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill"></div>
+          <div class="user-profile-games__percent">0%</div>
+        </div>
+
+        <div class="user-profile-games__date">2 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--22"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--22">22%</div>
+        </div>
+
+        <div class="user-profile-games__date">16 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--34"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--34">34%</div>
+        </div>
+
+        <div class="user-profile-games__date">60 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--1"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--1">1%</div>
+        </div>
+
+        <div class="user-profile-games__date">43 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--82"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--82">82%</div>
+        </div>
+
+        <div class="user-profile-games__date">160 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--86"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--86">86%</div>
+        </div>
+
+        <div class="user-profile-games__date">21 день назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--100"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--100">100%</div>
+        </div>
+
+        <div class="user-profile-games__date">3 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--67"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--67">67%</div>
+        </div>
+
+        <div class="user-profile-games__date">Вчера</div>
+      </div>
+
+      <div class="user-profile-games__game">
+      <a class="user-profile-games__link" href="#"></a>
+      <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+      <div class="user-profile-games__scale-wrap">
+        <div class="user-profile-games__scale"></div>
+        <div class="user-profile-games__fill"></div>
+        <div class="user-profile-games__percent">0%</div>
+      </div>
+
+      <div class="user-profile-games__date">2 дня назад</div>
+    </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--22"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--22">22%</div>
+        </div>
+
+        <div class="user-profile-games__date">16 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--34"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--34">34%</div>
+        </div>
+
+        <div class="user-profile-games__date">60 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--1"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--1">1%</div>
+        </div>
+
+        <div class="user-profile-games__date">43 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--82"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--82">82%</div>
+        </div>
+
+        <div class="user-profile-games__date">160 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--86"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--86">86%</div>
+        </div>
+
+        <div class="user-profile-games__date">21 день назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--100"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--100">100%</div>
+        </div>
+
+        <div class="user-profile-games__date">3 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--67"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--67">67%</div>
+        </div>
+
+        <div class="user-profile-games__date">Вчера</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill"></div>
+          <div class="user-profile-games__percent">0%</div>
+        </div>
+
+        <div class="user-profile-games__date">2 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--22"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--22">22%</div>
+        </div>
+
+        <div class="user-profile-games__date">16 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--34"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--34">34%</div>
+        </div>
+
+        <div class="user-profile-games__date">60 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--1"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--1">1%</div>
+        </div>
+
+        <div class="user-profile-games__date">43 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--82"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--82">82%</div>
+        </div>
+
+        <div class="user-profile-games__date">160 дней назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--86"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--86">86%</div>
+        </div>
+
+        <div class="user-profile-games__date">21 день назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--100"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--100">100%</div>
+        </div>
+
+        <div class="user-profile-games__date">3 дня назад</div>
+      </div>
+
+      <div class="user-profile-games__game">
+        <a class="user-profile-games__link" href="#"></a>
+        <img class="user-profile-games__img" src="img/game-img/prey.jpg" alt="">
+
+        <div class="user-profile-games__scale-wrap">
+          <div class="user-profile-games__scale"></div>
+          <div class="user-profile-games__fill user-profile-games__fill--67"></div>
+          <div class="user-profile-games__percent user-profile-games__percent--67">67%</div>
+        </div>
+
+        <div class="user-profile-games__date">Вчера</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <nav class="main-menu page-footer__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="games-year.html">Игры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrap">
+      <a class="logo-wrap__link" href="index.html">
+        <div class="logo-wrap__text">GameMag</div>
+        <img class="logo" src="img/logo-footer.png" alt="логотип">
+      </a>
+    </div>
+
+    <div class="page-footer__desc">
+      <div class="page-footer__text">
+        <p>Свидетельство о регистрации средства массовой информации Эл № ФС77-26762 от 29 декабря 2006 года.</p>
+        <p>Выдано Федеральной службой по надзору за соблюдением законодательства с сфере массовых коммуникаций и охране культурного наследия.</p>
+      </div>
+
+      <span>&copy; 1996-2017 GameMAG.ru</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<div class="search">
+  <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">Х</button>
+  <div class="search__inner search__inner--up">
+    <form class="search__form" action="">
+      <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </div>
+  <div class="search__inner search__inner--down">
+  </div>
+</div><!-- /search -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

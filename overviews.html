@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GameMag</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="main-wrap">
+
+  <header class="page-header">
+    <button class="btn btn--menu"></button>
+
+    <span class="page-header__menu-text">Меню</span>
+
+    <div id="logo-wrap" class="logo-wrap">
+      <a class="logo-wrap__link" href="index.html">
+        <div class="logo-wrap__text">Game<span class="logo-wrap__color">Mag</span></div>
+        <img class="logo" src="img/logo.png" alt="логотип">
+      </a>
+    </div>
+
+    <nav class="main-menu page-header__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+        <li class="main-menu__item"><span class="main-menu__link active">Обзоры</span></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+      </ul>
+
+      <button id="btn-search" class="btn btn--search"><span class="btn--search-icon"></span></button>
+    </nav>
+
+    <button class="btn btn--login">
+      <span class="btn__login-text">вход</span>
+      <span class="btn__login-img btn__login-img--passive"></span>
+      <span class="btn__login-img btn__login-img--active"></span>
+    </button>
+
+    <div class="login-active">
+      <div class="login-active__title">Вход</div>
+
+      <form class="login-form" action="/" method="post">
+        <label class="login-form__label login-form__label--user"><input class="login-form__input" type="text" name="login" placeholder="Логин"></label>
+        <label class="login-form__label login-form__label--pass"><input class="login-form__input" type="password" name="pass" placeholder="Пароль"></label>
+        <button class="btn btn--login-form" type="submit">Войти</button>
+      </form>
+
+      <div class="social-wrap">
+        <div class="social__text">или войти через</div>
+        <ul class="social">
+          <li class="social__item"><a href="#" class="social__link"></a></li>
+          <li class="social__item"><a href="#" class="social__link"></a></li>
+          <li class="social__item"><a href="#" class="social__link"></a></li>
+        </ul>
+      </div>
+
+      <div class="link-wrap">
+        <a class="remind-password" href="#">Забыли пароль</a>
+        <a class="check-in" href="#">Регистрация</a>
+      </div>
+    </div>
+  </header>
+
+<div class="main-content">
+  <div class="top-img-wrap">
+    <img class="top-img" src="img/top-img.jpg">
+  </div>
+
+  <div class="overview">
+    <div class="overview__img-wrap">
+      <img class="overview__img" src="img/overview-shovel-knight.jpg" alt="Shovel Knight">
+    </div>
+
+    <a class="overview__overview" href="#">Обзор</a>
+    <span class="overview__valuation">24</span>
+    <a class="overview__comments" href="#">Коментарии: <span class="overview__comments-weight">19</span></a>
+
+    <div class="overview__desc">
+      <h1 class="overview__title">Обзор Shovel Knight: Treasure Trove</h1>
+      <p class="overview__text">Мы попробовали последнюю главу истории и считаем ее лучшей</p>
+
+      <div class="overview__data">
+        <div class="authors">
+         <span class="authors__title">Авторы:</span>
+         <span class="authors__names"><a class="authors__name" href="#">Brick636</a>, <a class="authors__name" href="#">Meowww</a></span>
+        </div>
+
+        <div class="editors">
+          <span class="editors__title">Редактура:</span>
+          <span class="editors__names"><a class="editors__name" href="#">ACE</a>, <a class="editors__name" href="#">Shibodo</a></span>
+        </div>
+
+        <div class="date">
+          <span class="date__title">Дата:</span>
+          <a class="date__names" href="#">12.04.2017</a>
+        </div>
+      </div>
+
+      <div class="overview__emotions">
+        <a class="joy" href="#">
+          <img class="joy__img" src="img/icon-smile-joy-small.png">
+          <span class="joy__number">19</span>
+        </a>
+
+        <a class="bitterness" href="#">
+          <img class="bitterness__img" src="img/icon-smile-bitterness-small.png">
+          <span class="bitterness__number">15</span>
+        </a>
+
+        <a class="anger" href="#">
+          <img class="anger__img" src="img/icon-smile-anger-small.png">
+          <span class="anger__number">22</span>
+        </a>
+
+        <span class="overview__emotions-text">популярные эмоции статьи</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="content-wrap container">
+    <section class="left-content left-content--order">
+      <div class="about-game">
+        <img class="about-game__img" src="img/about-game-shovel-knight.jpg" alt="Shovel Knight">
+
+        <div class="about-game__desc">
+          <div class="platforms">
+            <span class="platforms__title about-game__titles">Платформы:</span>
+            <div class="platforms__names about-game__names">
+              <a class="support-item support-item--switch-no-opacity" href="#">Switch</a>
+            </div>
+          </div>
+
+          <div class="developer">
+            <span class="developer__title about-game__titles">Разработчик:</span>
+            <a class="developer__name about-game__names" href="#">Yacht Club Games</a>
+          </div>
+
+          <div class="publisher">
+            <span class="publisher__title about-game__titles">Издатель:</span>
+            <a class="publisher__name about-game__names" href="#">Yacht Club Games</a>
+          </div>
+
+          <div class="website">
+            <span class="website__title about-game__titles">Сайт:</span>
+            <a class="website__name website__name--td about-game__names" href="http://yachtclubga.ru" target="_blank
+">yachtclubga.ru</a>
+          </div>
+
+          <div class="genres">
+            <span class="genres__title about-game__titles">Жанры:</span>
+            <p class="genres__name genres__name--up"><a class="genres__name-link" href="#">Adventure</a>, <a class="genres__name-link" href="#">Platformer</a></p>
+          </div>
+
+          <div class="icon-wrap">
+            <button class="btn btn--icon-favorite">
+              <div class="btn__icon-favorite-img-wrap">
+                 <span class="btn__icon-favorite-img"></span>
+              </div>
+            </button>
+            <button class="btn btn--icon-star">
+              <div class="btn__icon-star-img-wrap">
+                <span class="btn__icon-star-img"></span>
+              </div>
+            </button>
+            <button class="btn btn--icon-draw">
+              <div class="btn__icon-draw-img-wrap">
+                <span class="btn__icon-draw-img"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="center-content center-content--order">
+      <p class="content-text"><span class="content-text-first-letter">В</span>сего за несколько лет Shovel Knight из очередной пиксельной разработки на Kickstarter вырос в популярный хит, который не только получил поддержку Nintendo и собственную фигурку amiibo, но и многочисленные  награды от профильной прессы. Не удивительно, что игра со временем посетила все возможные платформы, , наконец, свежее дополнение.</p>
+
+      <p class="content-text">Shovel Knight: Treasure Trove - полное издание, которое включает в себя сразу несколько историй. Первая из них - это Shovel of Hope - основная сюжетная кампания за Лопатного рыцаря, который пытается спасти мир от злой волшебницы и найти пропавшую возлюбленную. Вторая история - Plague of Shadows - посвящена приключениям Чумного рыцаря, странного персонажа в маске, мечтающего создать ультимативное зелье. И, наконец, свежее дополнение Specter of Torment, которое рассказывает о приключениях Рыцаря-призрака и является временным эксклюзивом Nintendo Switch. Вторая история - Plague of Shadows - посвящена приключениям Чумного рыцаря, странного персонажа в маске, мечтающего создать ультимативное.</p>
+
+      <img class="content-img" src="img/content-img.jpg" alt="">
+
+      <p class="content-text">Каждый персонаж игры обладает своими уникальными способностями. Так, главный герой вооружен лопатой, которую использует в качестве меча. Вы можете прыгать острием вниз, как на пружине, отталкиваясь от противников и интерактивных объектов. Кроме этого, лопату можно использовать по прямому назначению - копать землю, извлекая зарытые сокровища. Например, тяжелая черная броня позволяет сохранять равновесие во время вражеских выпадов, но герой становится менее поворотливым.Казалось бы успех игры кроется в удачной стилизации под 8-битную классику - отчасти так оно и есть.</p>
+    </section>
+
+    <section class="right-content right-content--order">
+      <div class="history-of-project">
+        <div class="history-of-project__title">История проекта</div>
+
+        <ul class="history-of-project__overview">
+          <li class="history-of-project__item">
+            <a class="history-of-project__link" href="#"></a>
+            <span class="history-of-project__overview-date"> 04.02.2017</span>
+            <span class="history-of-project__overview-title"> Обзор Shovel Knight</span>
+          </li>
+
+          <li class="history-of-project__item">
+            <a class="history-of-project__link" href="#"></a>
+            <span class="history-of-project__overview-date"> 04.02.2016</span>
+            <span class="history-of-project__overview-title"> Обзор Shovel Knight</span>
+          </li>
+
+          <li class="history-of-project__item">
+            <a class="history-of-project__link" href="#"></a>
+            <span class="history-of-project__overview-date"> 04.02.2015</span>
+            <span class="history-of-project__overview-title"> Обзор Shovel Knight</span>
+          </li>
+
+          <li class="history-of-project__item">
+            <a class="history-of-project__link" href="#"></a>
+            <span class="history-of-project__overview-date"> 04.02.2014</span>
+            <span class="history-of-project__overview-title"> Обзор Shovel Knight</span>
+          </li>
+
+          <li class="history-of-project__item history-of-project__item--more">
+            <a class="history-of-project__link" href="#"></a>
+            <span class="history-of-project__more-title">Показать еще материалы</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="games-in-material">
+        <h3 class="games-in-material__title">Игры в материале</h3>
+
+        <div class="games-in-material__img-wrap">
+          <a class="games-in-material__link" href="#"><img class="games-in-material__img" src="img/games-in-material-img1.jpg" alt=""></a>
+          <a class="games-in-material__link" href="#"><img class="games-in-material__img" src="img/games-in-material-img2.jpg" alt=""></a>
+          <a class="games-in-material__link" href="#"><img class="games-in-material__img" src="img/games-in-material-img3.jpg" alt=""></a>
+          <a class="games-in-material__link" href="#"><img class="games-in-material__img" src="img/games-in-material-img4.jpg" alt=""></a>
+          <a class="games-in-material__link" href="#"><img class="games-in-material__img" src="img/games-in-material-img5.jpg" alt=""></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <img class="full-img" src="img/full-img.jpg" alt="">
+
+  <div class="content-wrap container content-wrap--clearfix">
+    <section class="left-content left-content--float">
+      <blockquote class="blockquote">Чуть позже у специального персонажа можно прокачать вспомогательные удары, вроде атаки вокруг персонажа или выстрела снарядом, который бьет стоящих на земле противников.</blockquote>
+    </section>
+
+    <section class="center-content">
+      <p class="content-text">Чуть позже у специального персонажа можно прокачать вспомогательные удары, вроде атаки вокруг персонажа или выстрела снарядом, который бьет стоящих на земле противников. Тут же можно разжиться модифицированными доспехами, которые дают те или иные бонусы. Например, тяжелая черная броня позволяет сохранять равновесие во время вражеских выпадов, но герой становится менее поворотливым.Казалось бы успех игры кроется в удачной стилизации под 8-битную классику - отчасти так оно и есть. Но настоящая сила Shovel Knight проявляется   вариативности и грамотной адаптации ретро-механик под современные стандарты игрового дизайна.В набор также входит DLC про Рыцаря-короля и специальная мультиплеерная арена, но этот контент будет доступен позже в виде бесплатного обновления.выстрела снарядом, который бьет стоящих на земле противников. Тут же можно разжиться модифицированными доспехами, которые дают те или иные бонусы. Например, тяжелая черная броня позволяет сохранять равновесие во время вражеских выпадов, но герой становится менее поворотливым.Казалось бы успех игры кроется в удачной стилизации под 8-битную классику - отчасти так оно и есть. Но настоящая сила Shovel Knight проявляется</p>
+    </section>
+
+    <section class="right-content"></section>
+  </div>
+
+  <div class="advertising">
+    <span class="advertising__text">Партнерский материал</span>
+    <img class="advertising__img" src="img/advertising-ps4.jpg" alt="PS4">
+  </div>
+
+  <div class="content-wrap container">
+    <div class="left-content left-content--width">
+      <div class="visual-overview">
+        <div class="visual-overview__title"><span>Визуальный обзор</span></div>
+
+        <div class="visual-overview__img-wrap">
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img.jpg" alt="">
+            <span class="visual-overview__img-title">Однообразность - приходится<br> повторять одни и те же действия<br> тысячи раз</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img2.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img3.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img4.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img5.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img6.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img7.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img8.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img9.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+
+          <div class="visual-overview__wrap-img">
+            <img class="visual-overview__img" src="img/visual-overview-img10.jpg" alt="">
+            <span class="visual-overview__img-title">Эксклюзив</span>
+          </div>
+        </div>
+
+        <p class="visual-overview__text">Визуальный обзор базируется на основных признаках игры и является  дополнением к основному обзору.</p>
+      </div>
+    </div>
+
+    <section class="center-content center-content--width">
+      <p class="content-text">темноте, которая скрывает опасных врагов и многочисленные ловушки. Поэтому вам приходится совершать свои действия лишь в момент удара освещающей путь молнии. В лесу вы прыгаете на огромных проплывающих в воздухе пузырях, которые выдыхают спящие драконы. На затопленном корабле некоторые платформы исчезают под весом героя, что заставляет вас находиться в постоянном движении. Но мне особенно запомнился огромный жук, который путешествует по лаве и позволяет использовать свое тело в качестве батута.</p>
+
+      <h2 class="content-title content-title--margin">За пределами сюжета</h2>
+
+      <p class="content-text">Чуть позже у специального персонажа можно прокачать вспомогательные удары, вроде атаки вокруг персонажа или выстрела снарядом, который бьет стоящих на земле противников. Тут же можно разжиться модифицированными доспехами, которые дают те или иные бонусы.
+        темноте, которая скрывает опасных врагов и многочисленные ловушки. Поэтому вам приходится совершать свои действия лишь в момент удара освещающей путь молнии. В лесу вы прыгаете на огромных проплывающих в воздухе пузырях, которые выдыхают спящие драконы. На затопленном корабле некоторые платформы исчезают под весом героя, что заставляет вас находиться в постоянном движении. Но мне особенно запомнился огромный жук, который путешествует по лаве и позволяет использовать свое тело в качестве батута.
+        -механик под современные стандарты игрового дизайна.В набор также входит DLC про Рыцаря-короля и специальная мультиплеерная арена, но этот контент будет доступен позже в виде бесплатного обновления.выстрела снарядом, который бьет стоящих на земле  ротивников.
+        На затопленном корабле некоторые платформы исчезают под весом героя, что заставляет вас находиться в постоянном движении. Но мне особенно запомнился огромный</p>
+    </section>
+
+    <section class="right-content">
+      <div class="advertising-right">
+        <span class="advertising-right__text">Партнерский материал</span>
+        <img class="advertising-right__text" src="img/advertising-ps4-2.jpg" alt="PS4">
+      </div>
+    </section>
+  </div>
+
+  <div class="img-wrap">
+    <div class="container">
+      <img class="content-img content-img--mb" src="img/content-img1.jpg" alt="">
+      <img class="content-img content-img--mb" src="img/content-img2.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="content-wrap container">
+    <section class="left-content"></section>
+
+    <section class="center-content">
+      <h2 class="content-title content-title--b-margin">Подведение итогов</h2>
+      <p class="content-text">Чуть позже у специального персонажа можно прокачать вспомогательные удары,
+        вроде атаки вокруг персонажа или выстрела снарядом, который бьет стоящих на земле противников. Тут же можно разжиться модифицированными доспехами, которые дают те или иные бонусы. Например, тяжелая чемрная броня позволяет сохранять равновесие во время вражеских выпадов, но герой становится менее поворотливым.</p>
+    </section>
+
+    <section class="right-content"></section>
+  </div>
+
+  <section class="evaluation-of-game">
+    <div class="container">
+      <div class="game-passed">
+        <div class="game-passed__on">
+          <span class="game-passed__title">Игра пройдена на:</span>
+
+          <div class="game-passed__names">
+            <a class="support-item support-item--switch-no-opacity" href="#">Switch</a>
+            <a class="support-item support-item--switch-no-opacity" href="#">Switch</a>
+          </div>
+        </div>
+
+        <div class="theme">
+          <span class="theme__title">Правильные темы:</span>
+          <span class="theme__name">нет</span>
+        </div>
+
+        <div class="duration">
+          <span class="duration__title">Продолжительность:</span>
+          <span class="duration__name">67 мин</span>
+        </div>
+      </div>
+
+      <div class="score-game">
+        <div class="score-game__very-bad">
+          <div class="score-game__very-bad-wrap">
+            <span class="score-game__number">1-2</span>
+            <span class="score-game__title">злое говно</span>
+          </div>
+        </div>
+
+        <div class="score-game__bad">
+          <div class="score-game__bad-wrap">
+            <span class="score-game__number">3-4</span>
+            <span class="score-game__title">не надо</span>
+          </div>
+        </div>
+
+        <div class="score-game__medium active">
+          <div class="score-game__medium-wrap">
+            <span class="score-game__number-top">6</span>
+            <span class="score-game__number active">5-6</span>
+            <span class="score-game__title active">общепит</span>
+          </div>
+        </div>
+
+        <div class="score-game__good">
+          <div class="score-game__good-wrap">
+            <span class="score-game__number">7-8</span>
+            <span class="score-game__title">в самый раз</span>
+          </div>
+        </div>
+
+        <div class="score-game__very-good">
+          <div class="score-game__very-good-wrap">
+            <span class="score-game__number">9</span>
+            <span class="score-game__title">очень круто</span>
+          </div>
+        </div>
+
+        <div class="score-game__masterpiece">
+          <div class="score-game__masterpiece-wrap">
+            <span class="score-game__number">10</span>
+            <span class="score-game__title">шедевер!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="comment-background">
+    <div class="emotion-rating">
+      <div class="emotion-rating__title">Выберите эмоцию которую  вызвал материал:</div>
+      <div class="emotion-rating__img-wrap">
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-img btn__emotion-rating-joy"></span>
+          <span class="btn__emotion-rating-text">радость</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-img btn__emotion-rating-disgust"></span>
+          <span class="btn__emotion-rating-text">отвращение</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img active">
+          <span class="btn__emotion-rating-img btn__emotion-rating-surprise"></span>
+          <span class="btn__emotion-rating-text">удивление</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-img btn__emotion-rating-anger"></span>
+          <span class="btn__emotion-rating-text">злость</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-img btn__emotion-rating-bitterness"></span>
+          <span class="btn__emotion-rating-text">горечь</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-img btn__emotion-rating-interest"></span>
+          <span class="btn__emotion-rating-text">интерес</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Результат голосования -->
+
+    <div class="emotion-rating emotion-rating--result">
+      <div class="emotion-rating__title">Результат:</div>
+      <div class="emotion-rating__img-wrap">
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-joy"></span>
+          <span class="btn__emotion-rating-text">9</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-disgust"></span>
+          <span class="btn__emotion-rating-text">0</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-surprise"></span>
+          <span class="btn__emotion-rating-text">23</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-anger"></span>
+          <span class="btn__emotion-rating-text">1</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-bitterness"></span>
+          <span class="btn__emotion-rating-text">2</span>
+        </button>
+
+        <button class="btn btn--emotion-rating-img">
+          <span class="btn__emotion-rating-interest"></span>
+          <span class="btn__emotion-rating-text">14</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="comments">
+      <div class="comments__title">Коментарии</div>
+      <p class="comments__text">Поделиться</p>
+
+      <form action="/" class="comments__form">
+        <img class="comments__form-img" src="img/user-pic.png" alt="User Photo">
+        <textarea class="comments__form-textarea"></textarea>
+        <button class="btn btn--comments-form">Отправить</button>
+      </form>
+
+      <div class="comment">
+        <img class="comment__img" src="img/user-pic.png" alt="">
+
+        <a class="comment__username" href="#">332Rore</a>
+        <span class="comment__date">27 мин. назад</span>
+
+        <div class="comment__desc">
+          <p class="comment__text">Глупо задумываться о том, насколько высок ваш уровень, чтобы позволить себе рисовать на людях. Во-первых, потому что большинство прохожих видят вас в первый и в последний раз и их мнение не играет никакой роли, а во-вторых, они сами вряд ли смогут также. Выйти за привычные рамки, будь это даже стены родной художки, — вот это уже поступок, движение вперед.</p>
+
+          <button class="btn btn--comment-answer">Ответить</button>
+        </div>
+      </div>
+
+      <div class="comment">
+        <img class="comment__img" src="img/user-pic.png" alt="">
+
+        <a class="comment__username" href="#">Terminator</a>
+        <span class="comment__date">19 мин. назад</span>
+
+        <div class="comment__desc">
+          <p class="comment__text">шаблонные ответы, как-то в них нет жизни. пусть у меня нет столько лет опыта, но портфолио не хуже чем у этого чувака</p>
+
+          <button class="btn btn--comment-answer">Ответить</button>
+        </div>
+      </div>
+
+      <div class="comment to-answer">
+        <img class="comment__img" src="img/user-pic.png" alt="">
+
+        <a class="comment__username" href="#">332Rore</a>
+        <span class="comment__date">27 мин. назад</span>
+
+        <div class="comment__desc">
+          <p class="comment__text">Глупо задумываться о том, насколько высок ваш уровень, чтобы позволить себе рисовать на людях. Во-первых, потому что большинство прохожих видят вас в первый и в последний раз и их мнение не играет никакой роли, а во-вторых, они сами вряд ли смогут также. Выйти за привычные рамки, будь это даже стены родной художки, — вот это уже поступок, движение вперед.</p>
+
+          <button class="btn btn--comment-answer">Ответить</button>
+        </div>
+      </div>
+
+      <div class="comment answer">
+        <img class="comment__img" src="img/user-pic.png" alt="">
+
+        <a class="comment__username" href="#">Terminator</a>
+        <span class="comment__date">19 мин. назад</span>
+
+        <div class="comment__desc">
+          <p class="comment__text">шаблонные ответы, как-то в них нет жизни. пусть у меня нет столько лет опыта, но портфолио не хуже чем у этого чувака</p>
+
+          <button class="btn btn--comment-answer">Ответить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <nav class="main-menu page-footer__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+        <li class="main-menu__item"><span class="main-menu__active">Обзоры</span></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrap">
+      <a class="logo-wrap__link" href="index.html">
+        <div class="logo-wrap__text">GameMag</div>
+        <img class="logo" src="img/logo-footer.png" alt="логотип">
+      </a>
+    </div>
+
+    <div class="page-footer__desc">
+      <div class="page-footer__text">
+        <p>Свидетельство о регистрации средства массовой информации Эл № ФС77-26762 от 29 декабря 2006 года.</p>
+        <p>Выдано Федеральной службой по надзору за соблюдением законодательства с сфере массовых коммуникаций и охране культурного наследия.</p>
+      </div>
+
+      <span>&copy; 1996-2017 GameMAG.ru</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<div class="search">
+  <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">X</button>
+  <div class="search__inner search__inner--up">
+    <form class="search__form" action="">
+      <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </div>
+  <div class="search__inner search__inner--down">
+    <div class="search__related">
+    </div>
+  </div>
+</div><!-- /search -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

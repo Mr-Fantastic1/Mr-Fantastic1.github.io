@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GameMag</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="main-wrap">
+
+<header class="page-header">
+  <button class="btn btn--menu"></button>
+
+  <span class="page-header__menu-text">Меню</span>
+
+  <div id="logo-wrap" class="logo-wrap">
+    <a class="logo-wrap__link" href="index.html">
+      <div class="logo-wrap__text">Game<span class="logo-wrap__color">Mag</span></div>
+      <img class="logo" src="img/logo.png" alt="логотип">
+    </a>
+  </div>
+
+  <nav class="main-menu page-header__main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+    </ul>
+
+    <button id="btn-search" class="btn btn--search"><span class="btn--search-icon"></span></button>
+  </nav>
+
+  <button class="btn btn--login">
+    <span class="btn__login-text">вход</span>
+    <span class="btn__login-img btn__login-img--passive"></span>
+    <span class="btn__login-img btn__login-img--active"></span>
+
+  </button>
+
+  <div class="login-active">
+    <div class="login-active__title">Вход</div>
+
+    <form class="login-form" action="/" method="post">
+      <label class="login-form__label login-form__label--user"><input class="login-form__input" type="text" name="login" placeholder="Логин"></label>
+      <label class="login-form__label login-form__label--pass"><input class="login-form__input" type="password" name="pass" placeholder="Пароль"></label>
+      <button class="btn btn--login-form" type="submit">Войти</button>
+    </form>
+
+    <div class="social-wrap">
+      <div class="social__text">или войти через</div>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+      </ul>
+    </div>
+
+    <div class="link-wrap">
+      <a class="remind-password" href="#">Забыли пароль</a>
+      <a class="check-in" href="#">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<div class="main-content">
+  <div class="top-img-wrap">
+    <img class="top-img" src="img/top-img.jpg">
+  </div>
+
+  <div class="user-profile-section">
+    <div class="user-profile-section__top">
+      <span class="user-profile-section__badge user-profile-section__ace">ace</span>
+      <div class="user-profile-section__badge user-profile-section__crown">
+        <img src="img/user-profile/crown.png" alt="">
+      </div>
+      <span class="user-profile-section__badge user-profile-section__gms">1430 gms</span>
+      <span class="user-profile-section__badge user-profile-section__gmp">99.18 gmp</span>
+      <span class="user-profile-section__badge user-profile-section__rank">Админ</span>
+    </div>
+
+    <div class="user-profile-section__img-bg-wrap">
+      <img src="img/user-profile/user-profile-bg.jpg" alt="" class="user-profile-section__img-bg">
+      <img src="img/user-profile/user-profile-img.jpg" alt="" class="user-profile-section__img">
+    </div>
+
+    <div class="user-profile-section__desc">
+      <p>Каждый охотник желает знать, где сидит SJW-адепт</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="user-profile-menu user-profile-menu--events">
+      <ul class="user-profile-menu__list">
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">Профиль</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">Игры</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link active">События</a></li>
+        <li class="user-profile-menu__item"><a href="#" class="user-profile-menu__link">Виш-лист</a></li>
+      </ul>
+    </nav>
+
+    <section class="user-profile-latest-events">
+      <div class="user-profile-latest-events__wrap user-profile-latest-events__wrap--show">
+        <div class="user-profile-latest-events-achievements">
+          <div class="user-profile-latest-events__title">10.06.2017</div>
+
+          <div class="user-profile-latest-events-achievements__wrap">
+            <img class="user-profile-latest-events-achievements__game-img" src="img/game-img/tekken-7.jpg" alt="">
+
+            <ul class="user-profile-latest-events-achievements__list">
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей Неплохо в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--gold"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей Неплохо в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--silver"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="user-profile-latest-events-achievements">
+          <div class="user-profile-latest-events__title">09.06.2017</div>
+
+          <div class="user-profile-latest-events-achievements__wrap">
+            <img class="user-profile-latest-events-achievements__game-img" src="img/game-img/tekken-7.jpg" alt="">
+
+            <ul class="user-profile-latest-events-achievements__list">
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей Неплохо в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей Неплохо в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="user-profile-latest-events-achievements">
+          <div class="user-profile-latest-events__title">07.06.2017</div>
+
+          <div class="user-profile-latest-events-achievements__wrap">
+            <img class="user-profile-latest-events-achievements__game-img" src="img/game-img/tekken-7.jpg" alt="">
+
+            <ul class="user-profile-latest-events-achievements__list">
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Пора</a> в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Пора</a> в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Пора</a> в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Думаешь, ты можешь со мной тягаться?</a> в игре <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="user-profile-latest-events-achievements">
+          <div class="user-profile-latest-events__title">03.06.2017</div>
+
+          <div class="user-profile-latest-events-achievements__wrap">
+            <img class="user-profile-latest-events-achievements__game-img" src="img/game-img/tekken-7.jpg" alt="">
+
+            <ul class="user-profile-latest-events-achievements__list">
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+
+              <li class="user-profile-latest-events-achievements__item">
+                <span class="user-profile-latest-events-achievements__time">13:46</span>
+                <img class="user-profile-latest-events-achievements__img" src="img/user-profile/achievements.png" alt="">
+                <div class="user-profile-latest-events-achievements__txt">Получил скрытый трофей <a class="user-profile-latest-events-achievements__link" href="#">Bank of Gluttony Goes Bankrupt</a> в игре Pe <a class="user-profile-latest-events-achievements__link" href="#">Tekken 7</a></div>
+                <span class="user-profile-latest-events-achievements__reward user-profile-latest-events-achievements__reward--bronze"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn--user-profile-latest-events-more">Показать еще</button>
+    </section>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <nav class="main-menu page-footer__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="games-year.html">Игры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrap">
+      <a class="logo-wrap__link" href="index.html">
+        <div class="logo-wrap__text">GameMag</div>
+        <img class="logo" src="img/logo-footer.png" alt="логотип">
+      </a>
+    </div>
+
+    <div class="page-footer__desc">
+      <div class="page-footer__text">
+        <p>Свидетельство о регистрации средства массовой информации Эл № ФС77-26762 от 29 декабря 2006 года.</p>
+        <p>Выдано Федеральной службой по надзору за соблюдением законодательства с сфере массовых коммуникаций и охране культурного наследия.</p>
+      </div>
+
+      <span>&copy; 1996-2017 GameMAG.ru</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<div class="search">
+  <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">Х</button>
+  <div class="search__inner search__inner--up">
+    <form class="search__form" action="">
+      <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </div>
+  <div class="search__inner search__inner--down">
+  </div>
+</div><!-- /search -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

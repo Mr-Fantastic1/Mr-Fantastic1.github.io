@@ -1,0 +1,1208 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GameMag</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="main-wrap">
+
+<header class="page-header">
+  <button class="btn btn--menu"></button>
+
+  <span class="page-header__menu-text">Меню</span>
+
+  <div id="logo-wrap" class="logo-wrap">
+    <a class="logo-wrap__link" href="index.html">
+      <div class="logo-wrap__text">Game<span class="logo-wrap__color">Mag</span></div>
+      <img class="logo" src="img/logo.png" alt="логотип">
+    </a>
+  </div>
+
+  <nav class="main-menu page-header__main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+      <li class="main-menu__item"><span class="main-menu__link active">Игры</span></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+    </ul>
+
+    <button id="btn-search" class="btn btn--search"><span class="btn--search-icon"></span></button>
+  </nav>
+
+  <button class="btn btn--login">
+    <span class="btn__login-text">вход</span>
+    <span class="btn__login-img btn__login-img--passive"></span>
+    <span class="btn__login-img btn__login-img--active"></span>
+
+  </button>
+
+  <div class="login-active">
+    <div class="login-active__title">Вход</div>
+
+    <form class="login-form" action="/" method="post">
+      <label class="login-form__label login-form__label--user"><input class="login-form__input" type="text" name="login" placeholder="Логин"></label>
+      <label class="login-form__label login-form__label--pass"><input class="login-form__input" type="password" name="pass" placeholder="Пароль"></label>
+      <button class="btn btn--login-form" type="submit">Войти</button>
+    </form>
+
+    <div class="social-wrap">
+      <div class="social__text">или войти через</div>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+      </ul>
+    </div>
+
+    <div class="link-wrap">
+      <a class="remind-password" href="#">Забыли пароль</a>
+      <a class="check-in" href="#">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+  <div class="main-content">
+    <div class="top-img-wrap">
+      <img class="top-img" src="img/top-img.jpg">
+    </div>
+
+    <div class="games-sections">
+      <header class="games-sections-header">
+        <h2 class="games-sections-header__title">Игры</h2>
+
+        <button class="btn btn--games-sections-all">
+          <span class="btn__games-sections-text">Все</span>
+          <span class="btn__games-sections-img btn__games-sections-img--down"></span>
+          <span class="btn__games-sections-img btn__games-sections-img--up"></span>
+        </button>
+
+        <ul class="games-sections-menu">
+          <li class="games-sections-menu__item"><a href="" class="games-sections-menu__link active">Все прохождения</a></li>
+          <li class="games-sections-menu__item"><a href="" class="games-sections-menu__link games-sections-menu__link--green">Все видео</a></li>
+          <li class="games-sections-menu__item"><a href="" class="games-sections-menu__link games-sections-menu__link--orange">Все скриншоты</a></li>
+          <li class="games-sections-menu__item"><a href="" class="games-sections-menu__link games-sections-menu__link--red">Все стримы</a></li>
+          <li class="games-sections-menu__item"><a href="" class="games-sections-menu__link games-sections-menu__link--purple">Даты выхода</a></li>
+        </ul>
+      </header>
+
+      <div class="listing-menu-wrap">
+        <ul class="listing-menu toggle">
+          <li class="listing-menu__item">
+            <span class="listing-menu__title">Жанр:</span>
+
+            <a class="listing-menu__btn toggle__link" href="#">Все</a>
+
+            <ul class="listing-menu-all toggle__content">
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Всe</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Экшен</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Шутеры</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Ролевые</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Стратегии</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Симуляторы</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Приключения</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Аркады</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Гонки</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Спорт</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">MMO</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Пазлы</a></li>
+            </ul>
+          </li>
+
+          <li class="listing-menu__item">
+            <span class="listing-menu__title">Платформы:</span>
+
+            <a class="listing-menu__btn toggle__link" href="#">Все</a>
+
+            <ul class="listing-menu-all  toggle__content">
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Все</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> PC</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> PlayStation 4</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Xbox One</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Nintendo Wii U</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> PlayStation 3</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Xbox 360</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Nintendo Switch</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Nintendo Wii</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Android</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> iOS</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Mac</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Linux</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> PlayStation Vita</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Nintendo 3DS</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> PlayStation 2</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Xbox</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> PlayStation</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> PlayStation Portable (PSP)</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Nintendo DS</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Nintendo GameCube</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> GameCube</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#"> Nintendoa</a></li>
+            </ul>
+          </li>
+
+          <li class="listing-menu__item">
+            <span class="listing-menu__title">По алфавиту:</span>
+
+            <a class="listing-menu__btn toggle__link" href="#">Все</a>
+
+            <ul class="listing-menu-all toggle__content">
+              <li class="listing-menu-all__item">
+                <a class="listing-menu-all__link" href="#">A</a>
+                <a class="listing-menu-all__link" href="#">B</a>
+                <a class="listing-menu-all__link" href="#">C</a>
+                <a class="listing-menu-all__link" href="#">D</a>
+                <a class="listing-menu-all__link" href="#">E</a>
+                <a class="listing-menu-all__link" href="#">F</a>
+                <a class="listing-menu-all__link" href="#">G</a>
+                <a class="listing-menu-all__link" href="#">H</a>
+                <a class="listing-menu-all__link" href="#">I</a>
+                <a class="listing-menu-all__link" href="#">J</a>
+                <a class="listing-menu-all__link" href="#">K</a>
+                <a class="listing-menu-all__link" href="#">L</a>
+              </li>
+
+              <li class="listing-menu-all__item">
+                <a class="listing-menu-all__link" href="#">M</a>
+                <a class="listing-menu-all__link" href="#">N</a>
+                <a class="listing-menu-all__link" href="#">O</a>
+                <a class="listing-menu-all__link" href="#">P</a>
+                <a class="listing-menu-all__link" href="#">Q</a>
+                <a class="listing-menu-all__link" href="#">R</a>
+                <a class="listing-menu-all__link" href="#">S</a>
+                <a class="listing-menu-all__link" href="#">T</a>
+                <a class="listing-menu-all__link" href="#">U</a>
+                <a class="listing-menu-all__link" href="#">V</a>
+              </li>
+              <li class="listing-menu-all__item">
+                <a class="listing-menu-all__link" href="#">W</a>
+                <a class="listing-menu-all__link" href="#">X</a>
+                <a class="listing-menu-all__link" href="#">Y</a>
+                <a class="listing-menu-all__link" href="#">Z</a>
+                <a class="listing-menu-all__link" href="#">#</a>
+                <a class="listing-menu-all__link" href="#">0-9</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="listing-menu__item">
+            <span class="listing-menu__title">По году выхода:</span>
+
+            <a class="listing-menu__btn toggle__link" href="#">Все</a>
+
+            <ul class="listing-menu-all listing-menu-all--center toggle__content">
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Все</a></li>
+
+              <li class="listing-menu-all__item">
+                <a class="listing-menu-all__link" href="#">2017</a>
+                <a class="listing-menu-all__link" href="#">2016</a>
+                <a class="listing-menu-all__link" href="#">2015</a>
+                <a class="listing-menu-all__link" href="#">2014</a>
+              </li>
+
+              <li class="listing-menu-all__item">
+                <a class="listing-menu-all__link" href="#">2013</a>
+                <a class="listing-menu-all__link" href="#">2012</a>
+                <a class="listing-menu-all__link" href="#">2011</a>
+                <a class="listing-menu-all__link" href="#">2010</a>
+              </li>
+
+              <li class="listing-menu-all__item">
+                <a class="listing-menu-all__link" href="#">2009</a>
+                <a class="listing-menu-all__link" href="#">2008</a>
+                <a class="listing-menu-all__link" href="#">2007</a>
+                <a class="listing-menu-all__link" href="#">2006</a>
+              </li>
+
+              <li class="listing-menu-all__item">
+                <a class="listing-menu-all__link" href="#">2005</a>
+                <a class="listing-menu-all__link" href="#">2004</a>
+                <a class="listing-menu-all__link" href="#">2002</a>
+                <a class="listing-menu-all__link" href="#">2002</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="listing-menu__item">
+            <span class="listing-menu__title">Популярные игры:</span>
+
+            <a class="listing-menu__btn toggle__link" href="#">Все</a>
+
+            <ul class="listing-menu-all toggle__content">
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">За все время</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">Самые ожидаемые</a></li>
+              <li class="listing-menu-all__item"><a class="listing-menu-all__link" href="#">За месяц</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="games-sections__img-wrap">
+        <div class="game-listing-valuation game-listing-valuation--top game-listing-valuation--max">
+          <span class="game-listing-valuation__number game-listing-valuation__number--top">10</span>
+          <span class="game-listing-valuation__number-max game-listing-valuation__number-max--top">10</span>
+        </div>
+
+        <a class="games-sections__link" href=""></a>
+
+        <picture>
+          <source srcset="img/games-sections-img-t.jpg" media="(max-width: 767px)">
+
+          <img class="games-sections__img" srcset="img/games-sections-img.jpg" alt="">
+        </picture>
+      </div>
+  </div>
+
+  <div class="game-listing">
+    <div class="container">
+
+      <header class="game-listing__header">
+        <div class="game-listing__title">Январь 2017</div>
+      </header>
+
+      <div class="game-listing__game-wrap">
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--max">
+            <span class="game-listing-valuation__number">10</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/drifting-lands.jpg" alt="Drifting Lands">
+          <a class="game-listing__text" href="#">Drifting Lands</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information active">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--max">
+            <span class="game-listing-valuation__number">10</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/tekken-7.jpg" alt="Tekken 7">
+          <a class="game-listing__text" href="#">Tekken 7</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--max">
+            <span class="game-listing-valuation__number">10</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/rime.jpg" alt="Rime">
+          <a class="game-listing__text" href="#">Rime</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/metal-gear-survive.jpg" alt="Metal Gear Survive">
+          <a class="game-listing__text" href="#">Metal Gear Survive</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/what-remains.jpg" alt="What Remains of Edith Finch">
+          <a class="game-listing__text" href="#">What Remains of Edith Finch</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/prey.jpg" alt="Prey">
+          <a class="game-listing__text" href="#">Prey</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/red-dead-redemption-2.jpg" alt="Red Dead Redemption 2">
+          <a class="game-listing__text" href="#">Red Dead Redemption 2</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/draginquest-heroes-2.jpg" alt="Draginquest Heroes 2">
+          <a class="game-listing__text" href="#">Draginquest Heroes 2</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--high">
+            <span class="game-listing-valuation__number">8</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/loco-roco.jpg" alt="Loco Roco">
+          <a class="game-listing__text" href="#">Loco Roco</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--high">
+            <span class="game-listing-valuation__number">8</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/danger-zone.jpg" alt="Danger Zone">
+          <a class="game-listing__text" href="#">Danger Zone</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-listing">
+    <div class="container">
+
+      <header class="game-listing__header">
+        <div class="game-listing__title">Февраль 2017</div>
+      </header>
+
+      <div class="game-listing__game-wrap">
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--max">
+            <span class="game-listing-valuation__number">10</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/drifting-lands.jpg" alt="Drifting Lands">
+          <a class="game-listing__text" href="#">Drifting Lands</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information active">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--max">
+            <span class="game-listing-valuation__number">10</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/tekken-7.jpg" alt="Tekken 7">
+          <a class="game-listing__text" href="#">Tekken 7</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--max">
+            <span class="game-listing-valuation__number">10</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/rime.jpg" alt="Rime">
+          <a class="game-listing__text" href="#">Rime</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/metal-gear-survive.jpg" alt="Metal Gear Survive">
+          <a class="game-listing__text" href="#">Metal Gear Survive</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/what-remains.jpg" alt="What Remains of Edith Finch">
+          <a class="game-listing__text" href="#">What Remains of Edith Finch</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/prey.jpg" alt="Prey">
+          <a class="game-listing__text" href="#">Prey</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/red-dead-redemption-2.jpg" alt="Red Dead Redemption 2">
+          <a class="game-listing__text" href="#">Red Dead Redemption 2</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--very-high">
+            <span class="game-listing-valuation__number">9</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/draginquest-heroes-2.jpg" alt="Draginquest Heroes 2">
+          <a class="game-listing__text" href="#">Draginquest Heroes 2</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--high">
+            <span class="game-listing-valuation__number">8</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/loco-roco.jpg" alt="Loco Roco">
+          <a class="game-listing__text" href="#">Loco Roco</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+
+        <div class="game-listing__game">
+          <div class="game-listing-valuation game-listing-valuation--high">
+            <span class="game-listing-valuation__number">8</span>
+            <span class="game-listing-valuation__number-max">10</span>
+          </div>
+
+          <img class="game-listing__img" src="img/game-img/danger-zone.jpg" alt="Danger Zone">
+          <a class="game-listing__text" href="#">Danger Zone</a>
+
+          <div class="game-information">
+            <a href="" class="game-information__link"></a>
+            <div class="game-information__text game-information__text--genrespan">
+              <span class="game-information__text-title">Жанры:</span>
+              <a href="#" class="game-information__text-desc">ADVENTURE, PLATFORMER</a>
+            </div>
+
+            <div class="game-information__text game-information__text--publisher">
+              <span class="game-information__text-title">Разработчик:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--developer">
+              <span class="game-information__text-title">Издатель:</span>
+              <a href="#" class="game-information__text-desc">Yacht Club Games</a>
+            </div>
+
+            <div class="game-information__text game-information__text--release-date">
+              <span class="game-information__text-title">Дата выхода:</span>
+              <a href="#" class="game-information__text-desc">28 февраля 2017</a>
+            </div>
+
+            <div class="game-information__text game-information__text--linksupport-item">
+              <span class="game-information__text-title">Платформы:</span>
+              <div class="game-information__text-desc">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+              </div>
+            </div>
+
+            <button class="btn btn--game-information">в избранное</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="page-navigation">
+    <ul class="page-navigation__list">
+      <li><a class="page-navigation__link page-navigation__link--prev" href=""></a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link active" href="">1</a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link" href="">2</a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link" href="">3</a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link" href="">4</a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link" href="">5</a></li>
+      <li><a class="page-navigation__link page-navigation__link--next" href=""></a></li>
+    </ul>
+  </nav>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <nav class="main-menu page-footer__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Новости</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrap">
+      <a class="logo-wrap__link" href="index.html">
+        <div class="logo-wrap__text">GameMag</div>
+        <img class="logo" src="img/logo-footer.png" alt="логотип">
+      </a>
+    </div>
+
+    <div class="page-footer__desc">
+      <div class="page-footer__text">
+        <p>Свидетельство о регистрации средства массовой информации Эл № ФС77-26762 от 29 декабря 2006 года.</p>
+        <p>Выдано Федеральной службой по надзору за соблюдением законодательства с сфере массовых коммуникаций и охране культурного наследия.</p>
+      </div>
+
+      <span>&copy; 1996-2017 GameMAG.ru</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<div class="search">
+  <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">Х</button>
+  <div class="search__inner search__inner--up">
+    <form class="search__form" action="">
+      <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </div>
+  <div class="search__inner search__inner--down">
+  </div>
+</div><!-- /search -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
