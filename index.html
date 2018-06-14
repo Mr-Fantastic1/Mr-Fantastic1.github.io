@@ -1,0 +1,1203 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GameMag</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main class="main-wrap">
+
+<header class="page-header">
+  <button class="btn btn--menu"></button>
+
+  <span class="page-header__menu-text">Меню</span>
+
+  <div id="logo-wrap" class="logo-wrap">
+    <a class="logo-wrap__link" href="index.html">
+      <div class="logo-wrap__text">Game<span class="logo-wrap__color">Mag</span></div>
+      <img class="logo" src="img/logo.png" alt="логотип">
+    </a>
+  </div>
+
+  <nav class="main-menu page-header__main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Новости</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="overviews.html">Обзоры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="games.html">Игры</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+    </ul>
+
+    <button id="btn-search" class="btn btn--search"><span class="btn--search-icon"></span></button>
+  </nav>
+
+  <button class="btn btn--login">
+    <span class="btn__login-text">вход</span>
+    <span class="btn__login-img btn__login-img--passive"></span>
+    <span class="btn__login-img btn__login-img--active"></span>
+
+  </button>
+
+  <div class="login-active">
+    <div class="login-active__title">Вход</div>
+
+    <form class="login-form" action="/" method="post">
+      <label class="login-form__label login-form__label--user"><input class="login-form__input" type="text" name="login" placeholder="Логин"></label>
+      <label class="login-form__label login-form__label--pass"><input class="login-form__input" type="password" name="pass" placeholder="Пароль"></label>
+      <button class="btn btn--login-form" type="submit">Войти</button>
+    </form>
+
+    <div class="social-wrap">
+      <div class="social__text">или войти через</div>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+        <li class="social__item"><a href="#" class="social__link"></a></li>
+      </ul>
+    </div>
+
+    <div class="link-wrap">
+      <a class="remind-password" href="#">Забыли пароль</a>
+      <a class="check-in" href="#">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<div class="main-content">
+  <div class="top-img-wrap">
+    <img class="top-img" src="img/top-img.jpg">
+  </div>
+
+  <div class="game-sections">
+    <nav class="game-menu">
+      <ul class="game-menu__list">
+        <li class="game-menu__item">Популярное</li>
+        <li class="game-menu__item"><a href="" class="game-menu__link">Drawn to Death</a></li>
+        <li class="game-menu__item"><a href="" class="game-menu__link">Persona 5</a></li>
+        <li class="game-menu__item"><a href="" class="game-menu__link">Mass Effect: Andromeda</a></li>
+        <li class="game-menu__item"><a href="" class="game-menu__link">Horizon Zero Dawn</a></li>
+        <li class="game-menu__item"><a href="" class="game-menu__link">Far Space</a></li>
+      </ul>
+    </nav>
+
+    <ul class="game-sections__list">
+      <li class="game-sections__item">
+        <figure class="effect-sadie">
+          <img src="img/game-news.jpg" alt="Игровые новости">
+          <figcaption class="effect-sadie__news">
+            <div class="wrap__desc">
+              <h3>Новости</h3>
+              <p>Sony представила хвалебный ролик PlayStation VR</p>
+            </div>
+            <a href="#"></a>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="game-sections__item">
+        <figure class="effect-sadie">
+          <img src="img/game-reviews.jpg" alt="Обзоры">
+          <figcaption class="effect-sadie__reviews">
+            <div class="wrap__desc">
+              <h3>Обзоры</h3>
+              <p>Thimbleweed Park</p>
+            </div>
+            <a href="#"></a>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="game-sections__item">
+        <figure class="effect-sadie">
+          <img src="img/game-guides.jpg" alt="Гиды">
+          <figcaption class="effect-sadie__guides">
+            <div class="wrap__desc">
+              <h3>Гиды</h3>
+              <p>Middle-Earth: Shadow of War опубликован геймплей</p>
+            </div>
+            <a href="#"></a>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="game-sections__item">
+        <figure class="effect-sadie">
+          <img src="img/game-special.jpg" alt="Спешалы">
+          <figcaption class="effect-sadie__special">
+            <div class="wrap__desc">
+              <h3>Спешалы</h3>
+              <p>The Legend of Zelda: Breath of the Wild</p>
+            </div>
+            <a href="#"></a>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+
+    <div class="top-news">
+      <div class="top-news__img-wrap">
+        <a class="top-news__link" href="#"></a>
+        <img class="top-news__img" src="img/top-news.jpg" alt="Главная новость">
+      </div>
+
+      <div class="top-news__wrap">
+        <h3 class="top-news__title">Главное</h3>
+        <p class="top-news__text"><span class="top-news__text--weight">CD Projekt RED</span> защищает торговую марку Cyberpunk после
+          поступивших обвинений от пользователей</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="news">
+    <div class="container">
+      <header class="news-header">
+        <div class="news-header__wrap">
+
+          <div class="news-header__title-wrap">
+            <h2 class="news-header__title">Новости</h2>
+            <button class="btn btn--news-add">Добавить новость</button>
+          </div>
+
+          <button class="btn btn--news-all">
+            <span class="btn__news-all-text">Все</span>
+            <span class="btn__news-all-img btn__news-all-img--down"></span>
+            <span class="btn__news-all-img btn__news-all-img--up"></span>
+          </button>
+        </div>
+
+        <ul class="news-menu">
+          <li class="news-menu__item"><a href="#" class="news-menu__link active">Все новости</a></li>
+          <li class="news-menu__item"><a href="#" class="news-menu__link">Все видео</a></li>
+          <li class="news-menu__item"><a href="#" class="news-menu__link">Все скриншоты</a></li>
+          <li class="news-menu__item"><a href="#" class="news-menu__link">Только популярное</a></li>
+        </ul>
+      </header>
+
+      <div class="news__wrap">
+        <div class="news-item-wrap">
+          <div class="news-item anchored">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <span class="news-item__valuation news-item__valuation--middle">15</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/killer-instinct.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Killer Instinct - представлен новый трейлер, посвященный ультимейту Килгора</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+        </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--guide" href="#">Гайд</a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+                <a href="#" class="support-item support-item--3ds">3DS</a>
+                <a href="#" class="support-item support-item--pc">PC</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--special" href="#">Спешиал</a>
+              <span class="news-item__valuation news-item__valuation--little">10</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item news-item--desc">
+            <a class="news-item__title" href="#">Animemaga</a>
+
+            <div class="news-item__desc">
+              <div class="news-item__desc-top">
+                <a class="news-item__desc-link" href="#"></a>
+                <img class="news-item__desc-img" src="img/animemaga-himoto.jpg" alt="himoto">
+                <p class="news-item__desc-text">Himoto! Umaru-chan: сестрёнка Умару скоро вернётся на ТВ</p>
+              </div>
+
+              <div class="news-item__desc-middle">
+                <a class="news-item__desc-link" href="#"></a>
+                <img class="news-item__desc-img" src="img/animemaga-oppo.jpg" alt="himoto">
+                <p class="news-item__desc-text">AnimeMAGa: Топ самых ожидаемых аниме весны 2017! Часть вторая</p>
+              </div>
+
+              <div class="news-item__desc-bottom">
+                <a class="news-item__desc-link" href="#"></a>
+                <img class="news-item__desc-img" src="img/animemaga-comic-con.jpg" alt="himoto">
+                <p class="news-item__desc-text">ИгроМир 2017 и Comic Con Russia 2017 стартовали продажи билетов</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--guide" href="#">Гайд</a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--guide" href="#">Гайд</a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+                <a href="#" class="support-item support-item--3ds">3DS</a>
+                <a href="#" class="support-item support-item--pc">PC</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="tabs">
+          <ul class="tabs__caption">
+            <li class="tabs__color1 active">Комментарии</li>
+            <li class="tabs__color2">Форум</li>
+          </ul>
+
+          <button class="btn btn--tabs-open">
+            <span class="btn__tabs-text">Раскрыть</span>
+            <span class="btn__tabs-img btn__tabs-img--down"></span>
+            <span class="btn__tabs-img btn__tabs-img--up"></span>
+          </button>
+
+          <ul class="tabs__content tabs__comments active">
+            <li class="tabs__content-item">
+              <a class="tabs__comments-link" href=""></a>
+              <p>Uncharted: The Lost Legacy - раскрыта дата релиза проекта, опубликован новый трейлер</p>
+              <span class="tab-author">19:27 от <a class="tab-author__link" href="#">maxhope</a></span>
+              <a class="tab-comment" href="#">9000000</a>
+            </li>
+            <li class="tabs__content-item">
+              <a class="tabs__comments-link" href=""></a>
+              <p>Uncharted: The Lost Legacy - раскрыта дата релиза проекта, опубликован новый трейлер</p>
+              <span class="tab-author">19:27 от <a class="tab-author__link" href="#">maxhope</a></span>
+              <a class="tab-comment" href="#">19</a>
+            </li>
+            <li class="tabs__content-item">
+              <a class="tabs__comments-link" href=""></a>
+              <p>Uncharted: The Lost Legacy - раскрыта дата релиза проекта, опубликован новый трейлер</p>
+              <span class="tab-author">19:27 от <a class="tab-author__link" href="#">maxhope</a></span>
+              <a class="tab-comment" href="#">19</a>
+            </li>
+            <li class="tabs__content-item">
+              <a class="tabs__comments-link" href=""></a>
+              <p>Uncharted: The Lost Legacy - раскрыта дата релиза проекта, опубликован новый трейлер</p>
+              <span class="tab-author">19:27 от <a class="tab-author__link" href="#">maxhope</a></span>
+              <a class="tab-comment" href="#">19</a>
+            </li>
+            <li class="tabs__content-item">
+              <a class="tabs__comments-link" href=""></a>
+              <p>Uncharted: The Lost Legacy - раскрыта дата релиза проекта, опубликован новый трейлер</p>
+              <span class="tab-author">19:27 от <a class="tab-author__link" href="#">maxhope</a></span>
+              <a class="tab-comment" href="#">19</a>
+              </li>
+            <li class="tabs__content-item">
+              <a class="tabs__comments-link" href=""></a>
+              <p>Uncharted: The Lost Legacy - раскрыта дата релиза проекта, опубликован новый трейлер</p>
+              <span class="tab-author">19:27 от <a class="tab-author__link" href="#">maxhope</a></span>
+              <a class="tab-comment" href="#">19</a>
+            </li>
+          </ul>
+
+          <ul class="tabs__content tabs__forum">
+            <li class="tabs__content-item">
+              <a class="tabs__forum-link" href=""></a>
+              <a class="tab-topic" href="#">Mario 5</a>
+              <p>artemnet: Хочется с кем-нибудь побегать, я играл в мультиплеер с третьих </p>
+              <span class="tab-author">Автор <a class="tab-author__link" href="#">Tinkino,</a> 15 июня, 2016</span>
+              <a class="tab-comment-forum" href="#">19</a>
+            </li>
+
+            <li class="tabs__content-item">
+              <a class="tabs__forum-link" href=""></a>
+              <a class="tab-topic" href="#">Gears of War 4</a>
+              <p>artemnet: Хочется с кем-нибудь побегать, я играл в мультиплеер с третьих </p>
+              <span class="tab-author">Автор <a class="tab-author__link" href="#">Tinkino,</a> 15 июня, 2016</span>
+              <a class="tab-comment-forum" href="#">19</a>
+            </li>
+
+            <li class="tabs__content-item">
+              <a class="tabs__forum-link" href=""></a>
+              <a class="tab-topic" href="#">Age of Conan</a>
+              <p>artemnet: Хочется с кем-нибудь побегать, я играл в мультиплеер с третьих </p>
+              <span class="tab-author">Автор <a class="tab-author__link" href="#">Tinkino,</a> 15 июня, 2016</span>
+              <a class="tab-comment-forum" href="#">19</a>
+            </li>
+
+            <li class="tabs__content-item">
+              <a class="tabs__forum-link" href=""></a>
+              <a class="tab-topic" href="#">TES: Skyrim</a>
+              <p>artemnet: Хочется с кем-нибудь побегать, я играл в мультиплеер с третьих </p>
+              <span class="tab-author">Автор <a class="tab-author__link" href="#">Tinkino,</a> 15 июня, 2016</span>
+              <a class="tab-comment-forum" href="#">19</a>
+            </li>
+
+            <li class="tabs__content-item">
+              <a class="tabs__forum-link" href=""></a>
+              <a class="tab-topic" href="#">Sims4</a>
+              <p>artemnet: Хочется с кем-нибудь побегать, я играл в мультиплеер с третьих </p>
+              <span class="tab-author">Автор <a class="tab-author__link" href="#">Tinkino,</a> 15 июня, 2016</span>
+              <a class="tab-comment-forum" href="#">19</a>
+            </li>
+
+            <li class="tabs__content-item">
+              <a class="tabs__forum-link" href=""></a>
+              <a class="tab-topic" href="#">Sims4</a>
+              <p>artemnet: Хочется с кем-нибудь побегать, я играл в мультиплеер с третьих </p>
+              <span class="tab-author">Автор <a class="tab-author__link" href="#">Tinkino,</a> 15 июня, 2016</span>
+              <a class="tab-comment-forum" href="#">19</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="release-games">
+    <div class="container">
+      <header class="release-games-header">
+        <div class="release-games-header__wrap">
+          <h2 class="release-games-header__title">Релизы игр:</h2>
+          <button class="btn btn--release-games-all">
+            <span class="btn__release-games-text">Все</span>
+            <span class="btn__release-games-img btn__release-games-img--down"></span>
+            <span class="btn__release-games-img btn__release-games-img--up"></span>
+          </button>
+
+          <ul class="release-date-menu">
+            <li class="release-date-menu__item"><a href="" class="release-date-menu__link active">2016</a></li>
+            <li class="release-date-menu__item"><a href="" class="release-date-menu__link">2017</a></li>
+            <li class="release-date-menu__item"><a href="" class="release-date-menu__link">2018</a></li>
+            <li class="release-date-menu__item"><a href="" class="release-date-menu__link">Месяца</a></li>
+            <li class="release-date-menu__item"><a href="" class="release-date-menu__link">Недели</a></li>
+          </ul>
+        </div>
+
+        <a class="release-games-header__text" href="#">Даты выхода новых игр</a>
+      </header>
+
+      <div class="game-wrap">
+        <div class="game">
+          <img class="game__img" src="img/twice.jpg" alt="">
+
+          <div class="game__desc">
+            <h4 class="game__title">Don't Knock Twice</h4>
+            <div class="game__support">Xbox One, PS4, PC</div>
+            <div class="game__release-date">
+              <span>Дата выхода:</span>
+              <span>11 апреля 2017</span>
+            </div>
+
+            <button class="btn btn--to-favorites">
+              <span class="btn__to-favorites-img active"></span>
+              <span class="btn__to-favorites-text">Добавить в избранное</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game">
+          <img class="game__img" src="img/yooka-laylee.jpg" alt="">
+
+          <div class="game__desc">
+            <h4 class="game__title">Yooka-Laylee</h4>
+            <div class="game__support">SWITCH, Xbox One, PS4, MAC, PC</div>
+            <div class="game__release-date">
+              <span>Дата выхода:</span>
+              <span>11 апреля 2017</span>
+            </div>
+
+            <button class="btn btn--to-favorites">
+              <span class="btn__to-favorites-img"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game">
+          <img class="game__img" src="img/twice.jpg" alt="">
+
+          <div class="game__desc">
+            <h4 class="game__title">Don't Knock Twice</h4>
+            <div class="game__support">Xbox One, PS4, PC</div>
+            <div class="game__release-date">
+              <span>Дата выхода:</span>
+              <span>11 апреля 2017</span>
+            </div>
+
+            <button class="btn btn--to-favorites">
+              <span class="btn__to-favorites-img"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game">
+          <img class="game__img" src="img/yooka-laylee.jpg" alt="">
+
+          <div class="game__desc">
+            <h4 class="game__title">Yooka-Laylee</h4>
+            <div class="game__support">SWITCH, Xbox One, PS4, MAC, PC</div>
+            <div class="game__release-date">
+              <span>Дата выхода:</span>
+              <span>11 апреля 2017</span>
+            </div>
+
+            <button class="btn btn--to-favorites">
+              <span class="btn__to-favorites-img"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game">
+          <img class="game__img" src="img/skyforge.jpg" alt="">
+
+          <div class="game__desc">
+            <h4 class="game__title">Skyforge</h4>
+            <div class="game__support">PS4</div>
+            <div class="game__release-date">
+              <span>Дата выхода:</span>
+              <span>11 апреля 2017</span>
+            </div>
+
+            <button class="btn btn--to-favorites">
+              <span class="btn__to-favorites-img"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game">
+          <img class="game__img" src="img/torment.jpg" alt="">
+
+          <div class="game__desc">
+            <h4 class="game__title">Planescape: Torment Enhanced Edition</h4>
+            <div class="game__support">PC</div>
+            <div class="game__release-date">
+              <span>Дата выхода:</span>
+              <span>11 апреля 2017</span>
+            </div>
+
+            <button class="btn btn--to-favorites">
+              <span class="btn__to-favorites-img"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game">
+          <img class="game__img" src="img/skyforge.jpg" alt="">
+
+          <div class="game__desc">
+            <h4 class="game__title">Skyforge</h4>
+            <div class="game__support">PS4</div>
+            <div class="game__release-date">
+              <span>Дата выхода:</span>
+              <span>11 апреля 2017</span>
+            </div>
+
+            <button class="btn btn--to-favorites">
+              <span class="btn__to-favorites-img"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="game">
+          <img class="game__img" src="img/torment.jpg" alt="">
+
+          <div class="game__desc">
+            <h4 class="game__title">Planescape: Torment Enhanced Edition</h4>
+            <div class="game__support">PC</div>
+            <div class="game__release-date">
+              <span>Дата выхода:</span>
+              <span>11 апреля 2017</span>
+            </div>
+
+            <button class="btn btn--to-favorites">
+              <span class="btn__to-favorites-img"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <div class="news__wrap">
+        <div class="news-item-wrap">
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <span class="news-item__valuation news-item__valuation--middle">15</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/killer-instinct.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Killer Instinct - представлен новый трейлер, посвященный ультимейту Килгора</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--guide" href="#">Гайд</a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+                <a href="#" class="support-item support-item--3ds">3DS</a>
+                <a href="#" class="support-item support-item--pc">PC</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--special" href="#">Спешиал</a>
+              <span class="news-item__valuation news-item__valuation--little">10</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--overview" href="#">Обзор</a>
+              <span class="news-item__valuation news-item__valuation--very-little">2</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+                <a href="#" class="support-item support-item--3ds">3DS</a>
+                <a href="#" class="support-item support-item--pc">PC</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item news-item--desc">
+            <a class="news-item__title news-item__title--gonzomag" href="#">GONZOMAG</a>
+
+            <div class="news-item__desc">
+              <div class="news-item__desc-top">
+                <a class="news-item__desc-link" href="#"></a>
+                <img class="news-item__desc-img" src="img/animemaga-himoto.jpg" alt="himoto">
+                <p class="news-item__desc-text">Himoto! Umaru-chan: сестрёнка Умару скоро вернётся на ТВ</p>
+              </div>
+
+              <div class="news-item__desc-middle">
+                <a class="news-item__desc-link" href="#"></a>
+                <img class="news-item__desc-img" src="img/animemaga-oppo.jpg" alt="himoto">
+                <p class="news-item__desc-text">Oppo R11 засветился в базе данных GFXBench: смартфон получил две основные камеры 16МП и  20-МП селфи-сенсор</p>
+              </div>
+
+              <div class="news-item__desc-bottom">
+                <a class="news-item__desc-link" href="#"></a>
+                <img class="news-item__desc-img" src="img/animemaga-comic-con.jpg" alt="himoto">
+                <p class="news-item__desc-text">ИгроМир 2017 и Comic Con Russia 2017 стартовали продажи билетов</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--guide" href="#">Гайд</a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+                <a href="#" class="support-item support-item--3ds">3DS</a>
+                <a href="#" class="support-item support-item--pc">PC</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="interview">
+          <h3 class="interview__title">Опрос</h3>
+          <div class="interview__desc">
+            <p class="interview__text">Какая у вас была первая консоль от Microsoft?</p>
+            <span class="interview__desc-img interview__desc-img--down"></span>
+            <span class="interview__desc-img interview__desc-img--up"></span>
+          </div>
+
+          <!-- interview__hidden-user Класс для скрытия формы, когда юзер проголосовал -->
+          <form class="interview-form" action="/" method="post">
+            <input id="xbox-360" class="interview-form__input" type="radio" name="your-console" value="xbox-360"><label class="interview-form__label" for="xbox-360">Xbox 360</label>
+            <input id="other-consoles" class="interview-form__input" type="radio" name="your-console" value="other-consoles"><label class="interview-form__label" for="other-consoles">У меня никогда не было консолей от Microsoft - я играю на других приставках</label>
+            <input id="pc" class="interview-form__input" type="radio" name="your-console" value="pc"><label class="interview-form__label" for="pc">У меня никогда не было консолей от Microsoft - я играю только на PC</label>
+            <input id="xbox-one" class="interview-form__input" type="radio" name="your-console" value="xbox-one"><label class="interview-form__label" for="xbox-one">Xbox One</label>
+            <input id="scorpio" class="interview-form__input" type="radio" name="your-console" value="scorpio"><label class="interview-form__label" for="scorpio">У меня никогда не было консолей от Microsoft, но планирую взять Scorpio</label>
+            <input id="noscorpio" class="interview-form__input" type="radio" name="your-console" value="noscorpio"><label class="interview-form__label" for="noscorpio">У меня никогда не было консолей от Microsoft, но планирую взять NoScorpio</label>
+
+            <p class="interview-form__text">Чтобы проголосовать Вам необходимо <a href="#">авторизоваться.</a> Или <a href="">Зарегистрируйтесь!</a></p>
+            <!-- interview__hidden-user Класс для скрытия текста выше, когда юзер авторизировался -->
+
+            <button class="btn btn--interview-form">Проголосовать</button>
+            <!-- btn--interview-in-user-login класс для отступа кнопки от последнего пункта, из-за того что скрывается верхний блок -->
+          </form>
+
+          <!-- Блок с результатами головования -->
+          <div class="interview-voted">
+            <ul class="interview-voted__list">
+              <li class="interview-voted__item">
+                <span class="interview-voted__name">Xbox 360</span>
+                <span class="interview-voted__number">156</span>
+              </li>
+
+              <li class="interview-voted__item">
+                <span class="interview-voted__name">У меня никогда не было консолей от Microsoft - я играю на других приставках </span>
+                <span class="interview-voted__number">95</span>
+              </li>
+
+              <li class="interview-voted__item">
+                <span class="interview-voted__name">У меня никогда не было консолей от Microsoft - я играю только на PC </span>
+                <span class="interview-voted__number">44</span>
+              </li>
+
+              <li class="interview-voted__item">
+                <span class="interview-voted__name">Xbox One</span>
+                <span class="interview-voted__number">30</span>
+              </li>
+
+              <li class="interview-voted__item">
+                <span class="interview-voted__name">У меня никогда не было консолей от Microsoft, но планирую взять Scorpio</span>
+                <span class="interview-voted__number">8</span>
+              </li>
+
+              <li class="interview-voted__item">
+                <span class="interview-voted__name">У меня никогда не было консолей от Microsoft, но планирую взять Scorpio</span>
+                <span class="interview-voted__number">6</span>
+              </li>
+            </ul>
+
+            <div class="interview-voted__all">Всего проголосовали <span class="interview-voted__all-color">339</span> человек</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <div class="top-news-wrap">
+    <div class="top-news top-news--bottom">
+      <div class="top-news__img-wrap">
+        <a class="top-news__link" href="#"></a>
+        <img class="top-news__img" src="img/top-news.jpg" alt="Главная новость">
+      </div>
+
+      <div class="top-news__wrap">
+        <h3 class="top-news__title">Главное</h3>
+        <p class="top-news__text"><span class="top-news__text--weight">CD Projekt RED</span> защищает торговую марку Cyberpunk после
+          поступивших обвинений от пользователей</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="news">
+    <div class="container">
+      <div class="news__wrap">
+        <div class="news-item-wrap news-item-wrap--width">
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <span class="news-item__valuation news-item__valuation--middle">15</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/killer-instinct.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Killer Instinct - представлен новый трейлер, посвященный ультимейту Килгора</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--guide" href="#">Гайд</a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+                <a href="#" class="support-item support-item--3ds">3DS</a>
+                <a href="#" class="support-item support-item--pc">PC</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item ">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--special" href="#">Спешиал</a>
+              <span class="news-item__valuation news-item__valuation--little">10</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item news-item--interview">
+            <div class="news-item__title-interview">Градус сообщества</div>
+
+            <div class="schedule">
+              <div class="schedule__column">
+                <div class="schedule__column-wrap">
+                  <span class="schedule__column-percent">8%</span>
+                  <div class="schedule__column-pro"></div>
+                </div>
+              </div>
+
+              <div class="schedule__column">
+                <div class="schedule__column-wrap">
+                  <span class="schedule__column-percent">15%</span>
+                  <div class="schedule__column-anime"></div>
+                </div>
+              </div>
+
+              <div class="schedule__column">
+                <div class="schedule__column-wrap">
+                  <span class="schedule__column-percent">6%</span>
+                  <div class="schedule__column-cosmopolitan"></div>
+                </div>
+              </div>
+
+              <div class="schedule__column">
+                <div class="schedule__column-wrap">
+                  <span class="schedule__column-percent">29%</span>
+                  <div class="schedule__column-port"></div>
+                </div>
+              </div>
+
+              <div class="schedule__column">
+                <div class="schedule__column-wrap">
+                  <span class="schedule__column-percent">2%</span>
+                  <div class="schedule__column-mario"></div>
+                </div>
+              </div>
+
+              <div class="schedule__column">
+                <div class="schedule__column-wrap">
+                  <span class="schedule__column-percent">1%</span>
+                  <div class="schedule__column-sony"></div>
+                </div>
+              </div>
+
+              <div class="schedule__column">
+                <div class="schedule__column-wrap">
+                  <span class="schedule__column-percent">14%</span>
+                  <div class="schedule__column-pangolin"></div>
+                </div>
+              </div>
+              <div class="schedule__column">
+                <div class="schedule__column-wrap">
+                  <span class="schedule__column-percent">7%</span>
+                  <div class="schedule__column-pc"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-name">
+              <div class="column-name__wrap">
+                <span class="column-name__color column-name__color--pro"></span>
+                <span class="column-name__text">Прогеймер</span>
+              </div>
+
+              <div class="column-name__wrap">
+                <span class="column-name__color column-name__color--anime"></span>
+                <span class="column-name__text">Анимашник</span>
+              </div>
+
+              <div class="column-name__wrap">
+                <span class="column-name__color column-name__color--cosmopolitan"></span>
+                <span class="column-name__text">Космополит</span>
+              </div>
+
+              <div class="column-name__wrap">
+                <span class="column-name__color column-name__color--port"></span>
+                <span class="column-name__text">Портативщик</span>
+              </div>
+
+              <div class="column-name__wrap">
+                <span class="column-name__color column-name__color--mario"></span>
+                <span class="column-name__text">Мариобой</span>
+              </div>
+
+              <div class="column-name__wrap">
+                <span class="column-name__color column-name__color--sony"></span>
+                <span class="column-name__text">Сонибой</span>
+              </div>
+
+              <div class="column-name__wrap">
+                <span class="column-name__color column-name__color--pangolin"></span>
+                <span class="column-name__text">Ящер</span>
+              </div>
+
+              <div class="column-name__wrap">
+                <span class="column-name__color column-name__color--pc"></span>
+                <span class="column-name__text">Пкбот</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--overview" href="#">Обзор</a>
+              <span class="news-item__valuation news-item__valuation--very-little">2</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+                <a href="#" class="support-item support-item--3ds">3DS</a>
+                <a href="#" class="support-item support-item--pc">PC</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+             </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--guide" href="#">Гайд</a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <a class="news-item__section news-item__section--guide" href="#">Гайд</a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+                <a href="#" class="support-item support-item--switch">Switch</a>
+                <a href="#" class="support-item support-item--xbox-one">Xbox One</a>
+                <a href="#" class="support-item support-item--ps4">PS4</a>
+                <a href="#" class="support-item support-item--3ds">3DS</a>
+                <a href="#" class="support-item support-item--pc">PC</a>
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/guide-img.jpg" alt="Killer Instinct">
+              </div>
+
+              <a class="news-item__text" href="#">Опубликован список самых продаваемых игр за март в Германии</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-item__top">
+              <a class="news-item__link" href="#"></a>
+              <span class="news-item__valuation news-item__valuation--high">24</span>
+
+              <div class="news-item__support">
+
+              </div>
+
+              <div class="news-item__img-wrap">
+                <img class="news-item__img" src="img/nintendo.jpg" alt="nintendo">
+              </div>
+
+              <a class="news-item__text" href="#">Nintendo Switch с большим отрывом лидирует в японском железном чарте по итогам марта</a>
+            </div>
+
+            <div class="news-item__bottom">
+              <a href="#" class="news-item__author">Gonzomag</a>
+              <a href="#" class="news-item__comment">34</a>
+              <a href="#" class="news-item__hashtag">#tagigri</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="page-navigation">
+    <ul class="page-navigation__list">
+      <li><a class="page-navigation__link page-navigation__link--prev" href=""></a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link active" href="">1</a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link" href="">2</a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link" href="">3</a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link" href="">4</a></li>
+      <li class="page-navigation__item"><a class="page-navigation__link" href="">5</a></li>
+      <li><a class="page-navigation__link page-navigation__link--next" href=""></a></li>
+    </ul>
+  </nav>
+
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <nav class="main-menu page-footer__main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><span class="main-menu__active">Новости</span></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Обзоры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Гиды</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Спецматериалы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Фокус</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Игры</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Платформы</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Пользователи</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Форумы</a></li>
+      </ul>
+    </nav>
+
+    <div class="logo-wrap">
+      <a class="logo-wrap__link" href="index.html">
+        <div class="logo-wrap__text">GameMag</div>
+        <img class="logo" src="img/logo-footer.png" alt="логотип">
+      </a>
+    </div>
+
+    <div class="page-footer__desc">
+      <div class="page-footer__text">
+        <p>Свидетельство о регистрации средства массовой информации Эл № ФС77-26762 от 29 декабря 2006 года.</p>
+        <p>Выдано Федеральной службой по надзору за соблюдением законодательства с сфере массовых коммуникаций и охране культурного наследия.</p>
+      </div>
+
+      <span>&copy; 1996-2017 GameMAG.ru</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<div class="search">
+  <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">Х</button>
+  <div class="search__inner search__inner--up">
+    <form class="search__form" action="">
+      <input class="search__input" name="search" type="search" placeholder="Search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </div>
+  <div class="search__inner search__inner--down">
+  </div>
+</div><!-- /search -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
